@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Scaling</title>
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- bootstrp icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap");
+      /* Poppins Font */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      /*  Yeseva One font */
+      #typography {
+        font-family: "Yeseva One", serif;
+      } 
+    </style>
+  </head>
+  <body class="scroll-smooth text-[#1b2031]">
+    <main class="h-screen px-48 bg-[#EEEFF1] py-10">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center h-20 py-16">
+        <!-- Logo -->
+          <img src="/assets/logo.png" class="w-[9vw]" alt="Logo"
+        /></a>
+        <!-- Menu -->
+        <div
+          class="flex items-center text-md space-x-10  font-medium"
+        >
+          <button class="hover:text-[#5d78ff] transition-all">Home</button>
+          <button class="hover:text-[#5d78ff] transition-all">About</button>
+          <button class="hover:text-[#5d78ff] transition-all">Service</button>
+          <button class="hover:text-[#5d78ff] transition-all">Work</button>
+          <button class="hover:text-[#5d78ff] transition-all">Resume</button>
+          <button class="hover:text-[#5d78ff] transition-all">Blog</button>
+          <button class="hover:text-[#5d78ff] transition-all">Contact</button>
+        </div>
+        <button
+          class="bg-[#5d78ff] rounded text-white text-md py-[15px] px-[20px] hover:bg-indigo-600"
+        >
+          Hire me now
+        </button>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="flex items-center h-[85vh] justify-between">
+        <div class="flex flex-col gap-7 ">
+          <span class="text-2xl"
+            ><i class="bi bi-dash-lg"></i> Hello, I am Natasha</span
+          >
+          <span class="text-6xl leading-[70px]" id="typography"
+            >I am here for <br />
+            your personal <br />
+            business</span
+          >
+          <span class="text-xl">
+            Enjoy team diversity and increase their networks <br />
+            among others people in various fields by
+          </span>
+          <button class="bg-[#5d78ff] text-white w-fit px-12 py-5 rounded-md">
+            Contact me
+          </button>
+        </div>
+        <div class="relative">
+          <div>
+            <img
+              src="./assets/2960351.jpg"
+              alt="natasha-img"
+              class="h-[600px] rounded-3xl w-full object-cover "
+            />
+          </div>
+
+          <div class="absolute bottom-10 left-[-90px]">
+            <div class="relative">
+              <img
+                src="./assets/popup-thumb.png"
+                alt=""
+                class="h-36 rounded-2xl relative"
+              />
+              <!-- Dark Overlay -->
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"
+              ></div>
+
+              <!-- Centered Button -->
+              <button
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 py-3 rounded-full bg-white w-fit h-fit text-4xl hover:bg-[#5d78ff] transition-all hover:text-white text-[#5d78ff]"
+              >
+                <i class="bi bi-play-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- about -->
+    <main class="h-screen px-48 py-10 mb-36" >
+      <div class="flex gap-5 flex-col items-center text-center text-xl mb-20 ">
+        <span>About</span>
+        <span id="typography" class="text-6xl">About Me</span>
+        <span class=" opacity-50 text-xl"
+          >Enjoy team diversity and increase their networks among <br />
+          others people in various fields by provided.</span
+        >
+      </div>
+      <section class="flex items-center h-[80vh] relative justify-start">
+        <!-- img -->
+        <img
+          src="./assets/about-img.jpg"
+          alt=""
+          class="h-[600px] rounded-3xl  w-[500px]"
+        />
+
+        <!-- card with content -->
+        <div
+          class="absolute left-96 bg-[#1b2031] w-[700px] h-fit text-white flex flex-col gap-20 rounded-xl py-[60px] px-[50px]"
+        >
+          <span id="typography" class="text-2xl"
+            >I design and build ultimate things.</span
+          >
+          <p class="text-lg">
+            I love to work in User Experience & User Interface designing.
+            Because I love to solve the design problem and find easy and better
+            solutions to solve it. I always try my best to make good user
+            interface with the best user experience. I have been working as a         
+            Visual designer from.
+          </p>
+          <div class="flex items-center gap-6 justify-start ">
+            <button class="bg-[#5d78ff] py-[15px] px-[30px] rounded-xl">Hire me</button>
+            <button class="py-[15px] px-[30px] border rounded-md border-gray-500">Download CV</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+ <!-- service -->
+<main class="px-48 py-10 h-screen bg-[#f8f9fa]" id="service">
+  <!-- Service container -->
+  <div class="flex flex-col gap-10">
+    <!-- Heading & Description -->
+    <div class="text-[#1b2031] flex flex-col items-start gap-5 ">
+      <span class="text-2xl text-gray-400"><i class="bi bi-dash-lg"></i> Working Area</span>
+      <span class="text-5xl" id="typography">Creative Service</span>
+      <span class="text-lg">
+        Enjoy team diversity and increase their networks among <br />
+        others people in various fields by provided.
+      </span>
+    </div>
+
+    <!-- Cards container -->
+    <section class="flex items-center h-[50vh] w-full overflow-x-hidden">
+      <div class="flex gap-20">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-2xl flex flex-col gap-5 w-[450px] shadow-sm h-[400px]">
+        <div class="relative">
+            <img src="./assets/service-bg.svg" class="h-40" />
+            <img src="./assets/Portio_files/ui-ux.svg" alt="" class="absolute bottom-6 h-20" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 id="typography" class="text-3xl">UI/UX Design</h4>
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet conset sadipscing elitr, sedf diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-2xl flex flex-col gap-5 w-[450px] shadow-sm  -ml-10 h-[400px]">
+          <div class="relative">
+            <img src="./assets/service-bg.svg" class="h-40" />
+            <img src="./assets/Portio_files/web.svg" alt="" class="absolute bottom-6 h-20" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 id="typography" class="text-3xl">Web Development</h4>
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet conset sadipscing elitr, sedf diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-2xl flex flex-col gap-5 w-[450px] shadow-sm  -ml-10 h-[400px]">
+          <div class="relative">
+            <img src="./assets/service-bg.svg" class="h-40" />
+            <img src="./assets/Portio_files/creative.svg" alt="" class="absolute bottom-6 h-20" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 id="typography" class="text-3xl">Creative Design</h4>
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet conset sadipscing elitr, sedf diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-2xl flex flex-col gap-5 w-[450px] shadow-sm -ml-10 h-[400px]">
+          <div class="relative">
+            <img src="./assets/service-bg.svg" class="h-40" />
+            <img src="./assets/Portio_files/branding.svg" alt="" class="absolute bottom-6 h-20" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <h4 id="typography" class="text-3xl">Branding</h4>
+            <p class="text-xl">
+              Lorem ipsum dolor sit amet conset sadipscing elitr, sedf diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna aliquyam erat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- Work Section -->
+<main class="px-48 py-10  pb-20">
+  <div class="flex flex-col items-center gap-4 mb-10">
+    <span class="text-xl">My Portfolio</span>
+    <span id="typography" class="text-5xl text-center">
+      Check Some of Our <br /> Recent Work.
+    </span>
+  </div>
+
+  <section class="flex flex-wrap items-start w-full min-h-screen">
+    <!-- Card Container -->
+    <div class="grid grid-cols-2 items-start w-full">
+      
+      <!-- Card 1 -->
+      <div class="flex flex-col gap-4 items-start p-6">
+        <img src="./assets/Portio_files/portfolio-1.png" class="h-[500px] aspect-[9/16] rounded-xl max-w-full">
+        <span class="text-lg text-gray-400">Working Area</span>
+        <span class="text-2xl" id="typography">
+          Basketball Game Approach to Creating Modern Designs.
+        </span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex flex-col gap-4 items-start p-6">
+        <img src="./assets/Portio_files/portfolio-2.png" class="h-[400px] rounded-xl max-w-full">
+        <span class="text-lg text-gray-400">Working Area</span>
+        <span class="text-2xl" id="typography">
+          Basketball Game Approach to Creating Modern Designs.
+        </span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex flex-col gap-4 items-start p-6">
+        <img src="./assets/Portio_files/portfolio-3.png" class="h-[400px] rounded-xl max-w-full">
+        <span class="text-lg text-gray-400">Working Area</span>
+        <span class="text-2xl" id="typography">
+          Basketball Game Approach to Creating Modern Designs.
+        </span>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex flex-col gap-4 items-end p-6">
+        <img src="./assets/Portio_files/portfolio-4.png" class="h-[500px] rounded-xl max-w-full">
+        <div class="w-[500px] text-left pl-28 flex flex-col gap-4">
+          <span class="text-lg text-gray-400">Working Area</span>
+          <span class="text-2xl" id="typography">
+            Basketball Game Approach to Creating Modern Designs.
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Resume Section -->
+<main class="relative min-h-screen px-48 py-10 overflow-hidden">
+  <div class="absolute inset-0 bg-[#1b2031] -rotate-1 origin-bottom w-[200vh] h-full -z-10"></div>
+  <!-- Your content will go here -->
+   <section class="flex justify-between items-start  text-white pt-5">
+    <div class="flex flex-col gap-10 w-1/2 ">
+        <div class="flex flex-col gap-4">
+          <span class="text-2xl"> <i class="bi bi-dash-lg"></i> My Resume</span>
+          <span class="text-4xl" id="typography">My Expertises</span>
+          <span class="text-lg">Lorem ipsum dolor sit amet, consetetur <br/> sadipscing elitr, sed diam nonumy eirmod <br> tempor invidunt ut labore et dolore</span>
+        </div> 
+        <div class="flex flex-col gap-4">
+            <span  class="text-lg">
+              Magna aliquyam erat, sed diam voluptua. At <br> vero eos accusam justo.
+            </span>
+            <div class="flex  w-fit     text-xl">
+              <button class="bg-[#5d78ff] p-5 rounded-s-xl text-white">Education</button>
+              <button class="bg-white p-5 rounded-e-xl hover:bg-[#5d78ff] hover:text-white text-[#1b2031]">Experience</button>
+            </div>
+        </div>
+      
+    </div>
+    <!-- cards -->
+    <div class="flex flex-col gap-4 w-[40%]">
+      <div class="flex flex-col  bg-white  px-10 py-5 gap-8 rounded-xl">
+        <div class="flex flex-col gap-4">
+          <span class="text-[#5d78ff]"> <i class="bi bi-dash-lg "></i> 2008-2010</span>
+          <span class="text-4xl text-[#1b2031]" id="typography">Master in Arts</span>
+        </div>
+        <span class="text-justify w-fit text-gray-500">
+         Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        </span> 
+      </div> 
+      <div class="flex flex-col  bg-white px-10 py-5 gap-8 rounded-xl">
+        <div class="flex flex-col gap-4">
+          <span class="text-[#5d78ff]"> <i class="bi bi-dash-lg"></i> 2008-2010</span>
+          <span class="text-4xl text-[#1b2031]" id="typography">Master in Arts</span>
+        </div>
+        <span class="text-justify w-fit text-gray-500">
+         Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        </span> 
+      </div> <div class="flex flex-col  bg-white px-10 py-5 gap-8 rounded-xl">
+        <div class="flex flex-col gap-4">
+          <span class="text-[#5d78ff]"> <i class="bi bi-dash-lg"></i> 2008-2010</span>
+          <span class="text-4xl text-[#1b2031]" id="typography">Master in Arts</span>
+        </div>
+        <span class="text-justify w-fit text-gray-500">
+         Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        </span> 
+      </div> <div class="flex flex-col  bg-white px-10 py-5 gap-8 rounded-xl">
+        <div class="flex flex-col gap-4">
+          <span class="text-[#5d78ff]"> <i class="bi bi-dash-lg"></i> 2008-2010</span>
+          <span class="text-4xl text-[#1b2031]" id="typography">Master in Arts</span>
+        </div>
+        <span class="text-justify w-fit text-gray-500">
+         Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        </span> 
+      </div> 
+    </div>
+   </section>
+</main>
+
+<!--skills  -->
+<main class="h-screen px-40 py-10">
+  <section class="flex justify-between items-start space-x-32 h-full ">
+    <img src="./assets/skill_image.jpg" alt="skill_image" class="rounded-3xl h-[600px]" >
+    <div class="flex flex-col gap-6 justify-center h-full text-2xl ">
+      <span> <i class="bi bi-dash-lg"></i> My Skills</span>
+      <span class="text-5xl" id="typography">My Why hire me for your next project?</span>
+      <span class="text-lg text-justify">
+        My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+      </span>
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-3">
+          <div class="flex justify-between text-lg">
+            <span>HTML</span>
+            <span>75%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+            <div class="bg-[#5d78ff] h-2.5 rounded-full w-[75%]" ></div>
+          </div>
+        </div> <div class="flex flex-col gap-3">
+          <div class="flex justify-between text-lg">
+            <span>CSS</span>
+            <span>60%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+            <div class="bg-[#5d78ff] h-2.5 rounded-full w-[60%]" ></div>
+          </div>
+        </div> <div class="flex flex-col gap-3">
+          <div class="flex justify-between text-lg">
+            <span>Javascript</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+            <div class="bg-[#5d78ff] h-2.5 rounded-full w-[85%]" ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- testimonial -->
+ <main class="bg-[#f8f9fa] h-screen px-40 py-10 ">
+   <section class="flex justify-center items-center flex-col gap-20 h-screen">
+    <!-- Header -->
+    <div class="flex flex-col text-center gap-3">
+      <span>Testimonial</span>
+      <span id="typography" class="text-5xl">What People are <br/> Say About Me?</span>
+    </div>
+    <!-- cards conatiner -->
+    <div class="flex flex-row gap-10 items-center justify-between">
+      <!-- cards -->
+      <div class="bg-white w-[500px] py-[60px] px-[50px] flex flex-col gap-6 text-md shadow-md rounded-2xl">
+          <div class="flex items-start gap-2"><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i></div>
+          <span>Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna.</span>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-md"><i class="bi bi-dash-lg"></i>Ryan Cook</span>
+          <span class="text-gray-400">|</span>
+          <span class="text-gray-400">Jan 20, 2020</span>
+        </div>
+      </div> 
+     <div class="bg-white w-[500px] py-[60px] px-[50px] flex flex-col gap-6 text-md shadow-md rounded-2xl">
+          <div class="flex items-start gap-2"><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i><i class="bi bi-star-fill text-yellow-500"></i></div>
+          <span>Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna.</span>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-md"><i class="bi bi-dash-lg"></i>Ryan Cook</span>
+          <span class="text-gray-400">|</span>
+          <span class="text-gray-400">Jan 20, 2020</span>
+        </div>
+    </div> 
+     
+    </div>
+    <!-- three dots -->
+    <div class="flex flex-row gap-1 text-[30px]">
+      <i class="bi bi-dot text-[#5d78ff]"></i>
+      <i class="bi bi-dot text-gray-400"></i>
+      <i class="bi bi-dot text-gray-400"></i>
+    </div>
+  </section>
+ </main>
+
+ <!-- Blog Section -->
+<main class="px-40 py-20 text-lg h-screen mb-[200px]">
+  <div class="flex items-start flex-col gap-4">
+    <span><i class="bi bi-dash-lg"></i> Blog</span>
+    <span id="typography" class="text-5xl">Recent Articles</span>
+    <div class="flex justify-between w-full">
+      <span>
+        Enjoy team diversity and increase their networks among <br> others people in various fields by provided.
+      </span>
+      <button class="hover:bg-[#5d78ff] hover:text-white px-7 border border-gray-200 rounded-md transition-all">
+        See All Post
+      </button>
+    </div>
+  </div>
+
+  <!-- Articles Section -->
+  <section class="flex justify-between items-center mt-10">
+    <!-- Blog Item 1 -->
+    <div class="relative w-[320px]">
+      <img src="./assets/Portio_files/blog-1.jpg" alt="blog1Image" class="h-[450px] w-full rounded-3xl object-cover">
+      <div class="absolute bottom-[-50px] right-[-20px] translate-x-4 w-[300px]  bg-white p-10  shadow-lg rounded-2xl  flex flex-col gap-7">
+        <span class="text-sm text-[#5d78ff]"><i class="bi bi-dash-lg text-gray-500"></i> Jan 20, 2020</span>
+        <h3 class="text-xl font-semibold">World’s most famous app developers and designers.</h3>
+      </div>
+    </div>
+
+    <!-- Blog Item 2 -->
+    <div class="relative w-[320px]">
+      <img src="./assets/Portio_files/blog-2.jpg" alt="blog2Image" class="h-[450px] w-full rounded-3xl object-cover">
+      <div class="absolute bottom-[-50px] right-[-20px] translate-x-4 w-[300px]  bg-white p-10 shadow-lg rounded-2xl  flex flex-col gap-7">
+        <span class="text-sm text-[#5d78ff]"><i class="bi bi-dash-lg text-gray-500"></i> Jan 20, 2020</span>
+        <h3 class="text-xl font-semibold">World’s most famous app developers and designers.</h3>
+      </div>
+    </div>
+
+    <!-- Blog Item 3 -->
+    <div class="relative w-[320px]">
+      <img src="./assets/Portio_files/blog-3.jpg" alt="blog3Image" class="h-[450px] w-full rounded-3xl object-cover">
+      <div class="absolute bottom-[-50px] right-[-20px] translate-x-4 w-[300px]  bg-white p-10 shadow-lg rounded-2xl  flex flex-col gap-7">
+        <span class="text-sm text-[#5d78ff]"><i class="bi bi-dash-lg text-gray-500"></i> Jan 20, 2020</span>
+        <h3 class="text-xl font-semibold">World’s most famous app developers and designers.</h3>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- contacsts -->
+<main class="h-[70vh] px-40 py-10 bg-[#1b2031]">
+   <!-- Wrapper to position the blue card correctly -->
+<div class="relative z-10 mt-[-160px]">
+  <!-- Big Blue Card -->
+  <div class="bg-[#5d78ff] text-white py-20 px-16 text-center rounded-2xl max-w-4xl mx-auto relative shadow-lg flex flex-col items-start">
+    <span class="text-md opacity-80"><i class="bi bi-dash-lg"></i> Contact me</span>
+   <div class="flex items-center flex-row justify-between w-full">
+    <h2 class="text-5xl font-bold mt-2 " id="typography">Let’s Start a Project</h2>
+    <button class=" px-6 py-3 bg-white text-[#5d78ff] font-medium rounded-lg shadow-md hover:bg-gray-100 transition">
+      Get in touch
+    </button>
+   </div>
+  </div>
+</div>
+</main>
+  </body>
+</html> 
