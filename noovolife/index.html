@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- generalSans-font -->
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      /* font face for logo */
+      @font-face {
+        font-family: "Amono Display";
+        src: url("./assets/fonts/amonosdisplay-regular.otf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      #logo {
+        font-family: "Amono Display", sans-serif;
+      }
+      * {
+        font-family: "General Sans", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="absolute top-0 left-0 right-0 z-10 py-5 px-10">
+      <nav
+        class="container mx-auto px-0 max-[680px]:px-10 flex flex-row justify-between"
+      >
+        <div class="col-span-1 flex items-center gap-[20px]">
+          <button class="transition-colors duration-700 h-[44px] text-white">
+            <svg
+              width="20"
+              height="7"
+              viewBox="0 0 20 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M-1 1H19"
+                stroke="currentColor"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M-1 6H19"
+                stroke="currentColor"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+          <ul class="hidden lg:flex gap-[20px]">
+            <li>
+              <a
+                class="group flex items-center gap-[10px] whitespace-nowrap"
+                href="#"
+              >
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] transition-colors duration-700 text-white after:bg-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:transition-transform after:scale-x-0 group-hover:after:scale-x-100 after:origin-left"
+                >
+                  Our Models
+                </p>
+                <div class="transition-colors duration-700 text-white">
+                  <svg
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 0.999613L4.5 4.89962L0.599997 0.999613"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-[10px] whitespace-nowrap"
+                href="#"
+              >
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] transition-colors duration-700 text-white after:bg-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:transition-transform after:scale-x-0 group-hover:after:scale-x-100 after:origin-left"
+                >
+                  Inventory
+                </p>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-[10px] whitespace-nowrap"
+                href="#"
+              >
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] transition-colors duration-700 text-white after:bg-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:transition-transform after:scale-x-0 group-hover:after:scale-x-100 after:origin-left"
+                >
+                  Service
+                </p>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-[10px] whitespace-nowrap"
+                href="#"
+              >
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] transition-colors duration-700 text-white after:bg-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:transition-transform after:scale-x-0 group-hover:after:scale-x-100 after:origin-left"
+                >
+                  Blog
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-span-1 flex justify-center items-center ml-[-5px] lg:ml-0"
+        >
+          <a href="#">
+            <div
+              class="transition-colors duration-700 origin-left translate-x-[-20px] md:translate-x-[15px] lg:translate-x-[0px] scale-[0.8] lg:scale-[1] text-white"
+            >
+              <svg
+                width="117"
+                height="40"
+                viewBox="0 0 117 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.773 21.7138H15.2982V9.88104C15.2982 6.89378 12.8754 4.47235 9.8865 4.47235C6.89759 4.47235 4.47483 6.89378 4.47483 9.88104V21.7138H0V9.88104C0 4.4243 4.42674 0 9.8865 0C15.3462 0 19.773 4.4243 19.773 9.88104V21.7138Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M34.9548 4.47235C38.5548 4.47235 41.4848 7.4007 41.4848 10.9987C41.4848 14.5968 38.5548 17.5251 34.9548 17.5251C31.3548 17.5251 28.4248 14.5968 28.4248 10.9987C28.4248 7.4007 31.3548 4.47235 34.9548 4.47235ZM34.9548 0C28.8777 0 23.95 4.92502 23.95 10.9987C23.95 17.0725 28.8777 21.9975 34.9548 21.9975C41.0319 21.9975 45.9596 17.0725 45.9596 10.9987C45.9596 4.92502 41.0319 0 34.9548 0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M105.995 4.47235C109.595 4.47235 112.525 7.4007 112.525 10.9987C112.525 14.5968 109.595 17.5251 105.995 17.5251C102.395 17.5251 99.4652 14.5968 99.4652 10.9987C99.4652 7.4007 102.395 4.47235 105.995 4.47235ZM105.995 0C99.9181 0 94.9904 4.92502 94.9904 10.9987C94.9904 17.0725 99.9181 21.9975 105.995 21.9975C112.072 21.9975 117 17.0725 117 10.9987C117 4.92502 112.072 0 105.995 0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M88.1021 0.289889L83.6025 16.1873L79.0408 0.289889H74.386L79.7899 19.1265C80.8912 22.9648 86.337 22.9555 87.4243 19.1125L92.7522 0.289889H88.1021Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M61.143 4.47235C64.743 4.47235 67.673 7.4007 67.673 10.9987C67.673 14.5968 64.743 17.5251 61.143 17.5251C57.543 17.5251 54.613 14.5968 54.613 10.9987C54.613 7.4007 57.543 4.47235 61.143 4.47235ZM61.143 0C55.0659 0 50.1382 4.92502 50.1382 10.9987C50.1382 17.0725 55.0659 21.9975 61.143 21.9975C67.2201 21.9975 72.1478 17.0725 72.1478 10.9987C72.1478 4.92502 67.2201 0 61.143 0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M8.015 37H7.349V31.141H5.18V30.538H10.184V31.141H8.015V37ZM16.5353 37H15.8603V30.538H18.1643C19.5323 30.538 20.3873 31.249 20.3873 32.491C20.3873 33.463 19.7483 34.192 18.7313 34.363L20.5583 37H19.7483L18.0113 34.444H16.5353V37ZM16.5353 31.105V33.877H18.1103C19.1003 33.877 19.7123 33.391 19.7123 32.491C19.7123 31.591 19.1003 31.105 18.1103 31.105H16.5353ZM30.783 37L30.108 35.209H27.093L26.409 37H25.743L28.254 30.538H28.992L31.494 37H30.783ZM28.605 31.258L27.3 34.66H29.892L28.605 31.258ZM41.1542 30.538L38.7332 37H37.9952L35.5832 30.538H36.2852L38.3732 36.226L40.4792 30.538H41.1542ZM50.731 36.415V37H46.852V30.538H50.668V31.123H47.527V33.373H50.398V33.958H47.527V36.415H50.731ZM60.4448 37H56.7548V30.538H57.4298V36.397H60.4448V37ZM77.909 30.538L75.488 37H74.75L72.338 30.538H73.04L75.128 36.226L77.234 30.538H77.909ZM87.0358 37L86.3608 35.209H83.3458L82.6618 37H81.9958L84.5068 30.538H85.2448L87.7468 37H87.0358ZM84.8578 31.258L83.5528 34.66H86.1448L84.8578 31.258ZM97.893 37L94.122 31.492V37H93.492V30.538H94.239L97.974 35.974V30.538H98.613V37H97.893ZM109.372 35.209C109.372 36.235 108.535 37.09 107.032 37.09C105.529 37.09 104.647 36.253 104.584 35.029H105.268C105.331 35.947 105.907 36.541 107.023 36.541C107.941 36.541 108.661 36.073 108.661 35.299C108.661 34.633 108.283 34.327 107.365 34.138L106.546 33.976C105.691 33.805 104.791 33.409 104.791 32.284C104.791 31.249 105.7 30.448 106.987 30.448C108.247 30.448 109.219 31.24 109.291 32.473H108.598C108.553 31.618 107.923 30.997 106.996 30.997C106.006 30.997 105.475 31.6 105.475 32.248C105.475 33.013 106.123 33.247 106.843 33.391L107.662 33.562C108.751 33.787 109.372 34.237 109.372 35.209Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <ul class="flex flex-row items-center gap-5">
+          <li class="block max-[1000px]:hidden">
+            <button
+              class="group flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-transparent text-white border-[1px] border-[rgba(255,255,255,1)] h-[45px] lg:h-[55px] px-[15px] lg:px-[25px] transition-colors duration-700"
+              type="button"
+            >
+              <div class="flex items-center">
+                <div>Contact us</div>
+                <div
+                  class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                >
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0"
+                  >
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </li>
+          <li>
+            <a
+              class="group px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-white text-black h-[45px] lg:h-[55px] pl-[5px] max-[1000px]:pl-[25px] lg:pr-[25px] transition-colors duration-700"
+              href="#"
+            >
+              <div
+                class="block max-[1000px]:hidden w-[50px] h-[50px] flex justify-center items-center rounded-full bg-grey"
+              >
+                <div
+                  class="h-full aspect-square"
+                  style="
+                    background-image: url('/assets/van-black.png');
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                ></div>
+              </div>
+              <div class="flex items-center">
+                <div>Build your van</div>
+                <div
+                  class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                >
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0"
+                  >
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Landing Page -->
+      <section
+        class="relative h-screen bg-cover bg-center text-white bg-[url(./assets/Home_page_header_plus_83242eaa85.webp)] backdrop-brightness-50 w-screen"
+      >
+        <div class="absolute inset-0 backdrop-brightness-75"></div>
+
+        <!-- main content of landing page -->
+        <article
+          class="flex justify-between flexx-row items-center px-16 absolute bottom-20 w-full max-md:flex-col-reverse max-md:items-start max-md:gap-4"
+        >
+          <!-- first article -->
+          <div class="flex flex-col gap-8 items-start">
+            <span
+              class="text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl leading-[1.1] tracking-tight"
+            >
+              <span class="underline decoration-[3px] underline-offset-8"
+                >Noovo Plus</span
+              >
+              <br />
+              America’s First 7' Camper.
+            </span>
+            <span
+              class="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base"
+            >
+              With 7' headroom and an elevator bed, <br />it offers luxury and
+              comfort on every adventure.
+            </span>
+            <div class="flex items-center gap-3 text-[#131211]">
+              <button
+                class="px-[25px] rounded-full bg-white py-5 max-lg:px-6 max-md:px-5 max-sm:px-4 max-lg:py-4 max-md:py-3 max-sm:py-2 text-lg max-md:text-base max-sm:text-sm"
+              >
+                Discover Plus
+              </button>
+              <button
+                class="bg-[#f3b03d] py-5 px-7 rounded-full max-lg:px-6 max-md:px-5 max-sm:px-4 max-lg:py-4 max-md:py-3 max-sm:py-2 text-lg max-md:text-base max-sm:text-sm"
+              >
+                <i class="bi bi-lightning"></i> Reserve your Build
+              </button>
+            </div>
+          </div>
+          <!-- three buttons -->
+          <div
+            class="flex flex-row gap-3 items-center self-end max-md:self-start"
+          >
+            <div class="bg-white rounded-full h-2 w-[24px]"></div>
+            <i
+              class="fa-solid fa-circle text-gray-400 opacity-50 text-[8px]"
+            ></i>
+            <i
+              class="fa-solid fa-circle text-gray-400 opacity-50 text-[8px]"
+            ></i>
+          </div>
+        </article>
+      </section>
+      <!-- vans section -->
+      <section
+        class="py-[50px] xl:py-[100px] px-[36px] xl:px-[120px] flex flex-col gap-[50px] lg:gap-[100px]"
+      >
+        <div class="flex flex-col items-center gap-[30px]">
+          <div class="css-zvi4ix" style="animation-delay: 200ms">
+            <h1
+              class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-noovo-black text-center"
+            >
+              <span>We build camper vans<br />people </span>
+              <span class="relative inline-block">
+                <span>actually</span>
+                <span
+                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[#1C1B1A] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
+                  style="
+                    transition-timing-function: cubic-bezier(
+                      0,
+                      0.7,
+                      0.95,
+                      0.99
+                    );
+                    transform: scaleX(1);
+                  "
+                ></span>
+              </span>
+              <span> want to live in.</span>
+            </h1>
+          </div>
+        </div>
+        <ul class="grid grid-cols-2 gap-10 w-full">
+          <!-- card 1 -->
+          <li
+            class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
+          >
+            <!-- image -->
+            <div
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
+              style="
+                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
+                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/19cd5db746c2179d89f26cbb409ac073_6c15af1f32.webp');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <!-- desc -->
+            <div
+              class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
+            >
+              <h3
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+              >
+                Noovo <span>Lite</span>
+              </h3>
+              <div>
+                <p
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                >
+                  Starts at $162,700<br />or from <span>$1,087/mo</span>
+                </p>
+              </div>
+            </div>
+            <!-- buttons -->
+            <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-black text-white"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>Explore Lite</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-white text-black"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>See inventory</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- card 2 -->
+
+          <li
+            class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
+          >
+            <!-- image -->
+            <div
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
+              style="
+                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
+                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101381/5b3d9635fe523f3f371779619e8a3431_4ab50bbbaf.webp');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <!-- desc -->
+            <div
+              class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
+            >
+              <h3
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+              >
+                Noovo <span>Pop</span>
+              </h3>
+              <div>
+                <p
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                >
+                  Starts at $162,700<br />or from <span>$1,087/mo</span>
+                </p>
+              </div>
+            </div>
+            <!-- buttons -->
+            <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-black text-white"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>Explore Lite</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-white text-black"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>See inventory</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- card 3 -->
+          <li
+            class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
+          >
+            <!-- image -->
+            <div
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
+              style="
+                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
+                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/396471adbfd8d579ca1ace00c9ef6964_523dda1a97.webp');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <!-- desc -->
+            <div
+              class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
+            >
+              <h3
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+              >
+                Noovo <span>Plus</span>
+              </h3>
+              <div>
+                <p
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                >
+                  Starts at $162,700<br />or from <span>$1,087/mo</span>
+                </p>
+              </div>
+            </div>
+            <!-- buttons -->
+            <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-black text-white"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>Explore Lite</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-white text-black"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>See inventory</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- card 4 -->
+          <li
+            class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] rounded-2xl group overflow-hidden cursor-pointer relative flex flex-col text-center justify-center gap-[20px]"
+          >
+            <div
+              class="absolute inset-0 z-[1] group-hover:scale-[1.07] group-hover:duration-[5s] duration-[0.5s]"
+              style="
+                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
+                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725352734/Our_Vans_for_sale_0c4e42c0c6.webp');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="relative z-[2] flex flex-col gap-[20px]">
+              <h3
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px] text-white"
+              >
+                Our Vans for Sale
+              </h3>
+              <div class="flex justify-center">
+                <a
+                  class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-white text-black"
+                  href="#"
+                >
+                  <div class="flex items-center">
+                    <div>See full inventory</div>
+                    <div
+                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                    >
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Service -->
+      <section
+        class="relative pt-[56px] px-[36px] lg:px-[48px] min-h-screen mb-[450px] max-lg:mb-[250px] max-md:mb-[10px]"
+      >
+        <!-- Absolutely positioned GIF background -->
+        <div class="absolute inset-0 z-[1]">
+          <div
+            class="w-full h-screen max-xl:h-screen max-lg:h-[800px] max-md:h-[600px] mt-[450px] max-xl:mt-[450px] max-lg:mt-[350px] max-md:mt-[300px]"
+            style="
+              background-image: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725380858/all_2_d495e45839.gif');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          ></div>
+        </div>
+
+        <!-- Gradient overlay -->
+        <div
+          class="absolute z-[2] left-0 top-0 right-0 h-[500px] max-xl:h-[500px] max-lg:h-[400px] max-md:h-[300px] pointer-events-none"
+          style="
+            background: linear-gradient(
+              rgb(183, 190, 198) 95%,
+              rgba(83, 190, 198, 0) 100%
+            );
+          "
+        ></div>
+
+        <!-- Content -->
+        <div class="relative z-[3] flex flex-col gap-[25px]">
+          <div class="flex justify-center">
+            <p
+              class="font-general font-[400] h-[26px] flex justify-center items-center px-[8px] rounded-full bg-[#1C1B1A] text-white text-[12px] lg:text-[12px] max-xl:text-[12px] max-lg:text-[12px] max-md:text-[10px]"
+            >
+              Made by you, for you.
+            </p>
+          </div>
+          <h2
+            class="font-general font-[400] text-[30px] lg:text-[60px] max-xl:text-[60px] max-lg:text-[50px] max-md:text-[40px] leading-[30px] lg:leading-[60px] max-xl:leading-[60px] max-lg:leading-[50px] max-md:leading-[40px] tracking-[-1.2px] lg:tracking-[-2.5px] max-xl:tracking-[-2.5px] max-lg:tracking-[-2px] max-md:tracking-[-1.5px] text-white text-center"
+          >
+            <span></span>
+            <span class="relative inline-block">
+              <span>Custom-built vans </span>
+              <span
+                class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
+                style="
+                  transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
+                  transform: scaleX(1);
+                "
+              ></span>
+            </span>
+            <span>
+              made in the US with <br />
+              European craftsmanship, innovative design, <br />
+              &amp; all the comforts of home.
+            </span>
+          </h2>
+          <div class="flex flex-row items-center gap-[20px] justify-center">
+            <div class="flex justify-center">
+              <a
+                class="group px-[25px] pl-[10px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm transition-all [&_svg]:w-[16px] bg-white text-[#1C1B1A] hover:bg-[#1C1B1A] hover:text-white h-[60px] lg:h-[70px]"
+                href="/configure/"
+              >
+                <div
+                  class="h-[70%] aspect-square shrink-0 flex justify-center items-center rounded-full bg-grey text-[#1C1B1A]"
+                >
+                  <div
+                    class="h-full aspect-square"
+                    style="
+                      background-image: url('/assets/van-black.png');
+                      background-position: center center;
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                    "
+                  ></div>
+                </div>
+                <div>Build your Noovo Van</div>
+                <div class="w-[16px] overflow-hidden">
+                  <div
+                    class="transition-transform duration-500 translate-x-[-24px] group-hover:translate-x-[0px] flex gap-[8px]"
+                  >
+                    <div class="text-white">
+                      <svg
+                        width="16"
+                        height="11"
+                        viewBox="0 0 16 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0"
+                      >
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                          fill="#1C1B1A"
+                        ></path>
+                        <path
+                          d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                          stroke="#FFFFFF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <button
+              class="group px-[25px] pl-[10px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm transition-all [&amp;_svg]:w-[16px] bg-white text-[#1C1B1A] hover:bg-[#1C1B1A] hover:text-white h-[60px] lg:h-[70px]"
+              type="button"
+            >
+              <div
+                class="h-[70%] aspect-square shrink-0 flex justify-center items-center rounded-full bg-grey text-noovo-black"
+              >
+                <svg
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.2 1H1.8C1.08203 1 0.5 1.61561 0.5 2.375V10.625C0.5 11.3844 1.08203 12 1.8 12H12.2C12.918 12 13.5 11.3844 13.5 10.625V2.375C13.5 1.61561 12.918 1 12.2 1Z"
+                    stroke="#131211"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M13.5 3.0625L7.6695 6.98125C7.46883 7.11423 7.23681 7.18476 7 7.18476C6.76319 7.18476 6.53117 7.11423 6.3305 6.98125L0.5 3.0625"
+                    stroke="#131211"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <div>Contact us</div>
+              <div class="w-[16px] overflow-hidden">
+                <div
+                  class="transition-transform duration-500 translate-x-[-24px] group-hover:translate-x-[0px] flex gap-[8px]"
+                >
+                  <div class="text-white">
+                    <svg
+                      width="16"
+                      height="11"
+                      viewBox="0 0 16 11"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="shrink-0"
+                    >
+                      <path
+                        d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0"
+                  >
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inventory Section -->
+      <section
+        class="bg-[#1C1B1A] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:gap-[100px] pb-[130px] lg:pb-[100px] min-h-screen"
+      >
+        <div class="px-[33px] lg:px-[120px]">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] items-end max-w-[1200px] mx-auto"
+          >
+            <h2
+              class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-white text-center lg:text-left px-[27px] lg:px-[0px]"
+            >
+              <span>The best camper van<br />for </span>
+              <span class="relative inline-block">
+                <span>full-time living.</span>
+                <span
+                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-white origin-left transition-all delay-[0.5s] duration-[0.5s] block"
+                  style="
+                    transition-timing-function: cubic-bezier(
+                      0,
+                      0.7,
+                      0.95,
+                      0.99
+                    );
+                    transform: scaleX(1);
+                  "
+                ></span>
+              </span>
+              <span></span>
+            </h2>
+            <p
+              class="font-general font-[400] text-[16px] lg:text-[20px] leading-[22px] lg:leading-[26px] text-white opacity-70 text-center lg:text-left px-[27px] lg:px-[7vw]"
+            >
+              From the kitchen and bath to the bedroom and workspace, every
+              detail is meticulously designed—with a custom touch, even for the
+              family pup.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <ul
+            class="w-screen overflow-x-hidden scrollbar-hide flex gap-[20px] lg:gap-[30px] pr-[30px] lg:pr-[unset]"
+          >
+            <li
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+            >
+              <div class="flex flex-col">
+                <div class="h-[300px] shrink-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1728394112/Mask_group_deee49b77f.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div class="p-[25px]">
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                    >
+                      Craftsmanship
+                    </h3>
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] text-gray-500 lg:text-[18px]"
+                    >
+                      With rounded edges, self-closing drawers, and
+                      multi-purpose furniture, we offer the highest quality vans
+                      on the market.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+            >
+              <div class="flex flex-col">
+                <div class="h-[300px] shrink-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626145/1d9357946cebefa5f173a53d4ee28b4b_1d620d24fd.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div class="p-[25px]">
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                    >
+                      Off-grid capacity
+                    </h3>
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] text-gray-500 lg:text-[18px]"
+                    >
+                      Live self-sufficiently with up to 1320Ah of lithium power,
+                      400W of solar, and 40 gallons of fresh water. Connect to
+                      Internet wherever you are.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+            >
+              <div class="flex flex-col">
+                <div class="h-[300px] shrink-0">
+                  <video
+                    autoplay=""
+                    loop=""
+                    playsinline=""
+                    class="object-cover w-full h-full"
+                    alt="#"
+                  >
+                    <source
+                      src="https://res.cloudinary.com/ht4hxwcbr/video/upload/v1725637021/bathroom_36bfe2e4c1.webm"
+                      type="video/webm"
+                    />
+                  </video>
+                </div>
+                <div class="p-[25px]">
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                    >
+                      Full size bathroom
+                    </h3>
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] text-gray-500 lg:text-[18px]"
+                    >
+                      Say goodbye to gas station bathrooms with your own
+                      permanent flushable toilet and instant hot shower right in
+                      your van.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+            >
+              <div class="flex flex-col">
+                <div class="h-[300px] shrink-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626191/box_large_copy_2_5cfac2d088.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div class="p-[25px]">
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                    >
+                      Smart storage
+                    </h3>
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] text-gray-500 lg:text-[18px]"
+                    >
+                      Storage is easy with the spacious under-bed garage,
+                      overhead cabinets, closet, and kitchen pantry (with spice
+                      rack!).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+            >
+              <div class="flex flex-col">
+                <div class="h-[300px] shrink-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626205/box_large_2_a08b7b8e6f.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div class="p-[25px]">
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                    >
+                      Comfort
+                    </h3>
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] text-gray-500 lg:text-[18px]"
+                    >
+                      Enjoy filtered water from the sink, swivel seats to
+                      lounge, and a refreshing night's sleep on the perfect
+                      queen-sized mattress.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="absolute z-[2] lg:top-[50%] lg:bottom-[unset] bottom-[-100px] left-0 right-0 px-[40px] lg:px-[max(120px,calc((100vw-1200px)/2))] flex justify-center lg:justify-between gap-[10px] lg:gap-[20px] pointer-events-none"
+          >
+            <button
+              class="w-[66px] h-[41px] -translate-y-1/2 lg:translate-x-[-50%] bg-white rounded-full flex justify-center items-center cursor-pointer transition-all hover:scale-[1.05] pointer-events-auto"
+            >
+              <div class="rotate-[180deg]">
+                <svg
+                  width="16"
+                  height="11"
+                  viewBox="0 0 16 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="shrink-0"
+                >
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <button
+              class="w-[66px] h-[41px] -translate-y-1/2 lg:translate-x-[50%] bg-white rounded-full flex justify-center items-center cursor-pointer transition-all hover:scale-[1.05] pointer-events-auto"
+            >
+              <div>
+                <svg
+                  width="16"
+                  height="11"
+                  viewBox="0 0 16 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="shrink-0"
+                >
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div
+        class="w-full lg:rounded-[20px] aspect-[5/4] lg:aspect-[21/9] overflow-hidden px-7 h-[80vh] py-10"
+      >
+        <div class="w-full h-full" style="transform: none">
+          <div class="w-full h-full object-cover">
+            <img
+              lazy="true"
+              alt="#"
+              loading="lazy"
+              width="1920"
+              height="2000"
+              decoding="async"
+              data-nimg="1"
+              class="object-cover w-full h-full rounded-3xl"
+              style="color: transparent"
+              src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532247/556b35ad50ec67c0350a71906b9f77ed_4c7b9e850f.webp"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- comment -->
+      <section class="lg:px-[30px]">
+        <div
+          class="lg:px-[0px] py-[47px] pb-[130px] lg:py-[66px] bg-[#F5F5F5] flex flex-col gap-[40px] lg:gap-[70px] lg:rounded-[20px] overflow-hidden"
+        >
+          <div class="px-[10px] lg:px-[90px]">
+            <div
+              class="flex justify-center max-w-[1200px] mx-auto lg:my-[30px]"
+            >
+              <h2
+                class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-gray-500 text-center"
+              >
+                <span>Loved by those who believe<br /></span
+                ><span class="relative inline-block"
+                  ><span>adventure is mandatory.</span
+                  ><span
+                    class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
+                    style="
+                      transition-timing-function: cubic-bezier(
+                        0,
+                        0.7,
+                        0.95,
+                        0.99
+                      );
+                      transform: scaleX(1);
+                    "
+                  ></span></span
+                ><span></span>
+              </h2>
+            </div>
+          </div>
+          <div class="relative">
+            <ul
+              class="overflow-x-scroll scrollbar-hide mx-[90px] grid grid-cols-3 gap-[30px]"
+            >
+              <li
+                class="group relative w-full shrink-0 bg-white aspect-[4/5] rounded-[unset] overflow-hidden"
+              >
+                <div class="absolute z-[1] inset-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full rounded-[10px]"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532414/People_Card_b483ff2021.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="absolute z-[2] top-[calc(100%-115px)] w-[calc(100%-100px)] left-[35px] transition-all duration-500 group-hover:translate-x-[20px] group-hover:lg:translate-y-[-190px] group-hover:xl:translate-y-[-130px] flex flex-col gap-[40px]"
+                >
+                  <div class="flex gap-[10px] items-center">
+                    <div>
+                      <ul
+                        class="mb-[8px] inline-flex gap-[2px] px-[8px] py-[5px] backdrop-blur rounded-full bg-transparent group-hover:bg-grey transition-colors duration-500"
+                      >
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h3
+                        class="font-general font-[400] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] transition-colors duration-500 text-white group-hover:text-[#1C1B1A] text-[25px] lg:text-[20px] xl:text-[28px] leading-[25px] lg:leading-[20px] xl:leading-[30px]"
+                      >
+                        Our van life has been simply incredible.
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="opacity-0 group-hover:opacity-[1] group-hover:translate-y-[-20px] transition-all duration-500"
+                  >
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] 2xl:w-4/5 text-gray-500 lg:text-[min(1.4vw,16px)] lg:leading-[min(1.6vw,18px)] xl:text-[16px] xl:leading-[19px] 2xl:text-[17px] 2xl:leading-[20px]"
+                    >
+                      Noovo have shown to not only have top quality
+                      craftsmanship in their builds but also go above and beyond
+                      in customer service!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-[0] group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
+                ></div>
+              </li>
+              <li
+                class="group relative w-full shrink-0 bg-white aspect-[4/5] rounded-[unset] overflow-hidden"
+              >
+                <div class="absolute z-[1] inset-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full rounded-[10px]"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725106619/f786c65f023f1971b1f0e8f3d0bf77c5_a26dc029f8.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="absolute z-[2] top-[calc(100%-115px)] w-[calc(100%-100px)] left-[35px] transition-all duration-500 group-hover:translate-x-[20px] group-hover:lg:translate-y-[-190px] group-hover:xl:translate-y-[-130px] flex flex-col gap-[40px]"
+                >
+                  <div class="flex gap-[10px] items-center">
+                    <div>
+                      <ul
+                        class="mb-[8px] inline-flex gap-[2px] px-[8px] py-[5px] backdrop-blur rounded-full bg-transparent group-hover:bg-grey transition-colors duration-500"
+                      >
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h3
+                        class="font-general font-[400] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] transition-colors duration-500 text-white group-hover:text-[#1C1B1A] text-[25px] lg:text-[20px] xl:text-[28px] leading-[25px] lg:leading-[20px] xl:leading-[30px]"
+                      >
+                        Best decision I've ever made.
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="opacity-0 group-hover:opacity-[1] group-hover:translate-y-[-20px] transition-all duration-500"
+                  >
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] 2xl:w-4/5 text-gray-500 lg:text-[min(1.4vw,16px)] lg:leading-[min(1.6vw,18px)] xl:text-[16px] xl:leading-[19px] 2xl:text-[17px] 2xl:leading-[20px]"
+                    >
+                      After 2 years living on the road, I still can’t think of
+                      any creature comforts I might be missing. The van honestly
+                      has everything.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-[0] group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
+                ></div>
+              </li>
+              <li
+                class="group relative w-full shrink-0 bg-white aspect-[4/5] rounded-[unset] overflow-hidden"
+              >
+                <div class="absolute z-[1] inset-0">
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full rounded-[10px]"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532496/Frame_1073714205_d1bcab2acf.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="absolute z-[2] top-[calc(100%-115px)] w-[calc(100%-100px)] left-[35px] transition-all duration-500 group-hover:translate-x-[20px] group-hover:lg:translate-y-[-190px] group-hover:xl:translate-y-[-130px] flex flex-col gap-[40px]"
+                >
+                  <div class="flex gap-[10px] items-center">
+                    <div>
+                      <ul
+                        class="mb-[8px] inline-flex gap-[2px] px-[8px] py-[5px] backdrop-blur rounded-full bg-transparent group-hover:bg-grey transition-colors duration-500"
+                      >
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                        <li
+                          class="text-white group-hover:text-black transition-colors duration-500"
+                        >
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h3
+                        class="font-general font-[400] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] transition-colors duration-500 text-white group-hover:text-[#1C1B1A] text-[25px] lg:text-[20px] xl:text-[28px] leading-[25px] lg:leading-[20px] xl:leading-[30px]"
+                      >
+                        Couldn't be happier with the purchase!
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    class="opacity-0 group-hover:opacity-[1] group-hover:translate-y-[-20px] transition-all duration-500"
+                  >
+                    <p
+                      class="font-general font-[400] text-[16px] leading-[22px] 2xl:w-4/5 text-gray-500 lg:text-[min(1.4vw,16px)] lg:leading-[min(1.6vw,18px)] xl:text-[16px] xl:leading-[19px] 2xl:text-[17px] 2xl:leading-[20px]"
+                    >
+                      You can tell that the design and features are well thought
+                      out and a lot of care was put into the buildout.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-[0] group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
+                ></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog -->
+      <section class="w-full py-[50px] lg:pt-[115px] lg:pb-[130px] px-[30px]">
+        <div
+          class="max-w-[1200px] mx-auto flex flex-col gap-[70px] lg:gap-[100px]"
+        >
+          <div class="flex flex-col items-center gap-[30px]">
+            <div class="css-zvi4ix" style="animation-delay: 200ms">
+              <h2
+                class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-noovo-black text-center"
+              >
+                Van life made easy.<br />No outdoor experience necessary.
+              </h2>
+            </div>
+            <div class="css-zvi4ix" style="animation-delay: 250ms">
+              <p
+                class="font-general font-[400] text-[16px] lg:text-[20px] leading-[22px] lg:leading-[26px] text-center opacity-[0.6]"
+              >
+                We don’t just build exceptional vans—we craft an ownership
+                experience<br />that’s simple, seamless, and stress-free.
+              </p>
+            </div>
+          </div>
+          <ul
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] md:gap-[30px]"
+          >
+            <li class="group relative w-full lg:aspect-square aspect-[3/2]">
+              <div
+                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]"
+              >
+                <div
+                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
+                >
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full brightness-50"
+                    style="color: transparent"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725108293/70111fec46246e931482b60c5c81e1c6_11fa1fed22.webp"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"
+                ></div>
+              </div>
+              <div class="absolute inset-0 z-[3]">
+                <a
+                  class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
+                  alt="Financing for up to<br/>20 years."
+                  href="/"
+                  ><h3
+                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70"
+                  >
+                    Purchase
+                  </h3>
+                  <h3
+                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-white"
+                  >
+                    Financing for up to<br />20 years.
+                  </h3></a
+                >
+              </div>
+              <div
+                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1472_4447)">
+                    <path
+                      d="M1.66273 5.38429C1.8408 5.27156 1.92906 5.05927 1.8834 4.85352C1.79219 4.44252 1.8062 4.01515 1.92411 3.61101C2.04203 3.20688 2.26002 2.83909 2.55788 2.54175C2.85573 2.2444 3.22379 2.02712 3.62792 1.91003C4.03206 1.79294 4.4592 1.77983 4.86975 1.87191C5.07503 1.91795 5.28717 1.83057 5.40047 1.6533C5.62647 1.2997 5.93781 1.00873 6.30575 0.80718L6.06555 0.368657L6.30575 0.80718C6.6737 0.605635 7.08643 0.5 7.50589 0.5C7.92536 0.5 8.33809 0.605635 8.70603 0.80718C9.07398 1.00873 9.38531 1.2997 9.61132 1.6533C9.72468 1.83066 9.93697 1.91803 10.1423 1.87184C10.5535 1.77936 10.9814 1.79242 11.3862 1.90979C11.7909 2.02716 12.1595 2.24505 12.4575 2.5432L12.8111 2.18972L12.4575 2.5432C12.7556 2.84135 12.9734 3.21009 13.0907 3.61511C13.2081 4.02013 13.2211 4.44828 13.1287 4.85971C13.0825 5.06498 13.1699 5.27717 13.3471 5.39054C13.7005 5.61661 13.9914 5.92807 14.1929 6.29621C14.3944 6.66435 14.5 7.07732 14.5 7.49706C14.5 7.9168 14.3944 8.32977 14.1929 8.69791C13.9914 9.06605 13.7005 9.37751 13.3471 9.60358C13.1699 9.71689 13.0826 9.92893 13.1286 10.1341C13.2207 10.5449 13.2076 10.9723 13.0905 11.3767C12.9734 11.7811 12.7562 12.1493 12.459 12.4473C12.1617 12.7453 11.7941 12.9633 11.3903 13.0813C10.9864 13.1992 10.5593 13.2132 10.1485 13.122C9.9431 13.0764 9.7311 13.1642 9.61819 13.3418C9.39248 13.6968 9.0809 13.989 8.71233 14.1914C8.34376 14.3939 7.93009 14.5 7.50964 14.5C7.08919 14.5 6.67553 14.3939 6.30696 14.1914C5.93838 13.989 5.6268 13.6968 5.40109 13.3418C5.28798 13.1639 5.07544 13.0761 4.86975 13.1222C4.4592 13.2143 4.03206 13.2012 3.62793 13.0841C3.22379 12.967 2.85573 12.7497 2.55788 12.4524L2.20462 12.8062L2.55788 12.4524C2.26003 12.155 2.04203 11.7872 1.92411 11.3831C1.8062 10.979 1.79219 10.5516 1.8834 10.1406C1.92906 9.93485 1.8408 9.72256 1.66273 9.60983C1.30659 9.38435 1.01322 9.07241 0.809916 8.70302C0.606615 8.33362 0.5 7.91877 0.5 7.49706C0.5 7.07535 0.606615 6.6605 0.809916 6.2911C1.01322 5.92171 1.30659 5.60977 1.66273 5.38429Z"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M10.3864 4.61523H6.0595C5.67697 4.61523 5.31012 4.76719 5.03963 5.03768C4.76914 5.30816 4.61719 5.67502 4.61719 6.05754C4.61719 6.44007 4.76914 6.80692 5.03963 7.07741C5.31012 7.34789 5.67697 7.49985 6.0595 7.49985H8.94411C9.32663 7.49985 9.69349 7.65181 9.96398 7.92229C10.2345 8.19278 10.3864 8.55963 10.3864 8.94216C10.3864 9.32468 10.2345 9.69154 9.96398 9.96202C9.69349 10.2325 9.32663 10.3845 8.94411 10.3845H4.61719"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M7.5 11.5379V3.46094"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1472_4447">
+                      <rect width="15" height="15" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </li>
+            <li class="group relative w-full lg:aspect-square aspect-[3/2]">
+              <div
+                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px] border-[#dedede]"
+              >
+                <div
+                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
+                >
+                  <img
+                    lazy="true"
+                    alt="#"
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
+                    decoding="async"
+                    data-nimg="1"
+                    class="object-cover w-full h-full"
+                    style="color: transparent"
+                    src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725108310/Capture_d_ecran_2024_08_31_a_14_43_31_659b152d94.webp"
+                  />
+                </div>
+              </div>
+              <div class="absolute inset-0 z-[3]">
+                <a
+                  class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
+                  alt="Mobile repair in all<br/>50 states."
+                  href="/service/"
+                  ><h3
+                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-grey"
+                  >
+                    Service
+                  </h3>
+                  <h3
+                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-noovo-black"
+                  >
+                    Mobile repair in all<br />50 states.
+                  </h3></a
+                >
+              </div>
+              <div
+                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 2V7.76923H15V6.61539H8.07692V5.46154H15V4.30769H8.07692V3.15385H15V2H0ZM1.15385 2.57692C1.30686 2.57692 1.4536 2.63771 1.56179 2.7459C1.66999 2.85409 1.73077 3.00084 1.73077 3.15385C1.73077 3.30686 1.66999 3.4536 1.56179 3.56179C1.4536 3.66999 1.30686 3.73077 1.15385 3.73077C1.00084 3.73077 0.854094 3.66999 0.7459 3.56179C0.637706 3.4536 0.576923 3.30686 0.576923 3.15385C0.576923 3.00084 0.637706 2.85409 0.7459 2.7459C0.854094 2.63771 1.00084 2.57692 1.15385 2.57692ZM3.46154 2.57692C3.61455 2.57692 3.76129 2.63771 3.86948 2.7459C3.97768 2.85409 4.03846 3.00084 4.03846 3.15385C4.03846 3.30686 3.97768 3.4536 3.86948 3.56179C3.76129 3.66999 3.61455 3.73077 3.46154 3.73077C3.30853 3.73077 3.16179 3.66999 3.05359 3.56179C2.9454 3.4536 2.88462 3.30686 2.88462 3.15385C2.88462 3.00084 2.9454 2.85409 3.05359 2.7459C3.16179 2.63771 3.30853 2.57692 3.46154 2.57692ZM5.76923 2.57692C5.92224 2.57692 6.06898 2.63771 6.17718 2.7459C6.28537 2.85409 6.34615 3.00084 6.34615 3.15385C6.34615 3.30686 6.28537 3.4536 6.17718 3.56179C6.06898 3.66999 5.92224 3.73077 5.76923 3.73077C5.61622 3.73077 5.46948 3.66999 5.36128 3.56179C5.25309 3.4536 5.19231 3.30686 5.19231 3.15385C5.19231 3.00084 5.25309 2.85409 5.36128 2.7459C5.46948 2.63771 5.61622 2.57692 5.76923 2.57692ZM2.30769 4.30769C2.4607 4.30769 2.60744 4.36848 2.71564 4.47667C2.82383 4.58486 2.88462 4.73161 2.88462 4.88462C2.88462 5.03763 2.82383 5.18437 2.71564 5.29256C2.60744 5.40076 2.4607 5.46154 2.30769 5.46154C2.15468 5.46154 2.00794 5.40076 1.89975 5.29256C1.79155 5.18437 1.73077 5.03763 1.73077 4.88462C1.73077 4.73161 1.79155 4.58486 1.89975 4.47667C2.00794 4.36848 2.15468 4.30769 2.30769 4.30769ZM4.61538 4.30769C4.76839 4.30769 4.91514 4.36848 5.02333 4.47667C5.13152 4.58486 5.19231 4.73161 5.19231 4.88462C5.19231 5.03763 5.13152 5.18437 5.02333 5.29256C4.91514 5.40076 4.76839 5.46154 4.61538 5.46154C4.46238 5.46154 4.31563 5.40076 4.20744 5.29256C4.09924 5.18437 4.03846 5.03763 4.03846 4.88462C4.03846 4.73161 4.09924 4.58486 4.20744 4.47667C4.31563 4.36848 4.46238 4.30769 4.61538 4.30769ZM6.92308 4.30769C7.07609 4.30769 7.22283 4.36848 7.33102 4.47667C7.43922 4.58486 7.5 4.73161 7.5 4.88462C7.5 5.03763 7.43922 5.18437 7.33102 5.29256C7.22283 5.40076 7.07609 5.46154 6.92308 5.46154C6.77007 5.46154 6.62332 5.40076 6.51513 5.29256C6.40694 5.18437 6.34615 5.03763 6.34615 4.88462C6.34615 4.73161 6.40694 4.58486 6.51513 4.47667C6.62332 4.36848 6.77007 4.30769 6.92308 4.30769ZM1.15385 6.03846C1.30686 6.03846 1.4536 6.09925 1.56179 6.20744C1.66999 6.31563 1.73077 6.46238 1.73077 6.61539C1.73077 6.76839 1.66999 6.91514 1.56179 7.02333C1.4536 7.13153 1.30686 7.19231 1.15385 7.19231C1.00084 7.19231 0.854094 7.13153 0.7459 7.02333C0.637706 6.91514 0.576923 6.76839 0.576923 6.61539C0.576923 6.46238 0.637706 6.31563 0.7459 6.20744C0.854094 6.09925 1.00084 6.03846 1.15385 6.03846ZM3.46154 6.03846C3.61455 6.03846 3.76129 6.09925 3.86948 6.20744C3.97768 6.31563 4.03846 6.46238 4.03846 6.61539C4.03846 6.76839 3.97768 6.91514 3.86948 7.02333C3.76129 7.13153 3.61455 7.19231 3.46154 7.19231C3.30853 7.19231 3.16179 7.13153 3.05359 7.02333C2.9454 6.91514 2.88462 6.76839 2.88462 6.61539C2.88462 6.46238 2.9454 6.31563 3.05359 6.20744C3.16179 6.09925 3.30853 6.03846 3.46154 6.03846ZM5.76923 6.03846C5.92224 6.03846 6.06898 6.09925 6.17718 6.20744C6.28537 6.31563 6.34615 6.46238 6.34615 6.61539C6.34615 6.76839 6.28537 6.91514 6.17718 7.02333C6.06898 7.13153 5.92224 7.19231 5.76923 7.19231C5.61622 7.19231 5.46948 7.13153 5.36128 7.02333C5.25309 6.91514 5.19231 6.76839 5.19231 6.61539C5.19231 6.46238 5.25309 6.31563 5.36128 6.20744C5.46948 6.09925 5.61622 6.03846 5.76923 6.03846ZM0 8.92308V10.0769H15V8.92308H0ZM0 11.2308V12.3846H15V11.2308H0Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li
+              class="group relative w-full lg:aspect-square md:col-span-2 lg:col-span-1 aspect-[3/2]"
+            >
+              <div
+                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]"
+              >
+                <div
+                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
+                >
+                  <video
+                    autoplay=""
+                    loop=""
+                    muted=""
+                    playsinline=""
+                    class="object-cover w-full h-full brightness-50"
+                    alt="#"
+                  >
+                    <source
+                      src="https://res.cloudinary.com/ht4hxwcbr/video/upload/v1725108341/e7a5_4793_8686_288930204947_754438969e.webm"
+                      type="video/webm"
+                    />
+                  </video>
+                </div>
+                <div
+                  class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"
+                ></div>
+              </div>
+              <div class="absolute inset-0 z-[3]">
+                <a
+                  class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
+                  alt="Enjoyment comes with a <span>3-year warranty.</span>"
+                  href="/service/"
+                  ><h3
+                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70"
+                  >
+                    Warranty
+                  </h3>
+                  <h3
+                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-white text-center text-white"
+                  >
+                    Enjoyment comes with a <span>3-year warranty.</span>
+                  </h3></a
+                >
+              </div>
+              <div
+                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1472_4544)">
+                    <path
+                      d="M1.66273 5.38429C1.8408 5.27156 1.92906 5.05927 1.8834 4.85352C1.79219 4.44252 1.8062 4.01515 1.92411 3.61101C2.04203 3.20688 2.26002 2.83909 2.55788 2.54175C2.85573 2.2444 3.22379 2.02712 3.62792 1.91003C4.03206 1.79294 4.4592 1.77983 4.86975 1.87191C5.07503 1.91795 5.28717 1.83057 5.40047 1.6533C5.62647 1.2997 5.93781 1.00873 6.30575 0.80718L6.06555 0.368657L6.30575 0.80718C6.6737 0.605635 7.08643 0.5 7.50589 0.5C7.92536 0.5 8.33809 0.605635 8.70603 0.80718C9.07398 1.00873 9.38531 1.2997 9.61132 1.6533C9.72468 1.83066 9.93697 1.91803 10.1423 1.87184C10.5535 1.77936 10.9814 1.79242 11.3862 1.90979C11.7909 2.02716 12.1595 2.24505 12.4575 2.5432L12.8111 2.18972L12.4575 2.5432C12.7556 2.84135 12.9734 3.21009 13.0907 3.61511C13.2081 4.02013 13.2211 4.44828 13.1287 4.85971C13.0825 5.06498 13.1699 5.27717 13.3471 5.39054C13.7005 5.61661 13.9914 5.92807 14.1929 6.29621C14.3944 6.66435 14.5 7.07732 14.5 7.49706C14.5 7.9168 14.3944 8.32977 14.1929 8.69791C13.9914 9.06605 13.7005 9.37751 13.3471 9.60358C13.1699 9.71689 13.0826 9.92893 13.1286 10.1341C13.2207 10.5449 13.2076 10.9723 13.0905 11.3767C12.9734 11.7811 12.7562 12.1493 12.459 12.4473C12.1617 12.7453 11.7941 12.9633 11.3903 13.0813C10.9864 13.1992 10.5593 13.2132 10.1485 13.122C9.9431 13.0764 9.7311 13.1642 9.61819 13.3418C9.39248 13.6968 9.0809 13.989 8.71233 14.1914C8.34376 14.3939 7.93009 14.5 7.50964 14.5C7.08919 14.5 6.67553 14.3939 6.30696 14.1914C5.93838 13.989 5.6268 13.6968 5.40109 13.3418C5.28798 13.1639 5.07544 13.0761 4.86975 13.1222C4.4592 13.2143 4.03206 13.2012 3.62793 13.0841C3.22379 12.967 2.85573 12.7497 2.55788 12.4524L2.20462 12.8062L2.55788 12.4524C2.26003 12.155 2.04203 11.7872 1.92411 11.3831C1.8062 10.979 1.79219 10.5516 1.8834 10.1406C1.92906 9.93485 1.8408 9.72256 1.66273 9.60983C1.30659 9.38435 1.01322 9.07241 0.809916 8.70302C0.606615 8.33362 0.5 7.91877 0.5 7.49706C0.5 7.07535 0.606615 6.6605 0.809916 6.2911C1.01322 5.92171 1.30659 5.60977 1.66273 5.38429Z"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6 7.5L7.33333 9L10 6"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1472_4544">
+                      <rect width="15" height="15" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- experience Noovo -->
+      <section
+        class="relative h-[80vh]"
+        style="
+          background-image: url(/assets/bottom_f4421a1869.webp);
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div
+          class="inset-0 flex flex-col justify-center items-center gap-[20px] h-full"
+        >
+          <h2
+            class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-white text-center"
+          >
+            Experience the Noovo life<br />for a weekend.
+          </h2>
+          <a
+            class="group px-[25px] pl-[10px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm group transition-all [&amp;_svg]:w-[16px] bg-white text-[#1C1B1A] hover:bg-[#1C1B1A] hover:text-white h-[70px]"
+            href="/camper-vans-for-rent/"
+            ><div
+              class="h-[70%] aspect-square shrink-0 flex justify-center items-center rounded-full bg-gray-500 text-[#1C1B1A]"
+            >
+              <div
+                class="h-full aspect-square"
+                style="
+                  background-image: url(/assets/van-black.png);
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></div>
+            </div>
+            <div>Try a Noovo Van</div>
+            <div class="w-[16px] overflow-hidden">
+              <div
+                class="transition-transform duration-500 translate-x-[-24px] group-hover:translate-x-[0px] flex gap-[8px]"
+              >
+                <div class="text-white">
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0"
+                  >
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <svg
+                  width="16"
+                  height="11"
+                  viewBox="0 0 16 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="shrink-0"
+                >
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div></div
+          ></a>
+        </div>
+      </section>
+
+      <!-- question -->
+      <section class="bg-white lg:p-[30px]">
+        <div
+          class="py-[50px] lg:py-[100px] px-[37px] lg:px-[0px] bg-[#f5f5f5] flex flex-col gap-[50px] rounded-[20px]"
+        >
+          <div class="flex flex-col items-center gap-[30px]">
+            <div class="css-zvi4ix" style="animation-delay: 200ms">
+              <h2
+                class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-[#1C1B1A] text-center"
+              >
+                Frequently Asked Questions
+              </h2>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-[10px] lg:px-[30px]">
+            <li
+              class="group w-full max-w-[720px] mx-auto pl-[30px] pr-[10px] rounded-[33px] bg-white overflow-hidden"
+            >
+              <button class="w-full">
+                <div
+                  class="min-h-[75px] lg:min-h-[65px] py-[10px] flex justify-between items-center"
+                >
+                  <h3
+                    class="font-general text-[16px] lg:text-[16px] font-[500] text-noovo-black text-left w-[calc(100%-80px)]"
+                  >
+                    Why should I choose a Noovo camper van?
+                  </h3>
+                  <div
+                    class="w-[45px] h-[45px] shrink-0 flex justify-center items-center rounded-full bg-[#f5f5f5]"
+                  >
+                    <div class="scale-[0.5] text-[#1C1B1A]">
+                      <div class="transition-transform">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="1"
+                            d="M10.152 17.5H7.848V9.99395H0V7.97177H7.848V0.5H10.152V7.97177H18V9.99395H10.152V17.5Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li
+              class="group w-full max-w-[720px] mx-auto pl-[30px] pr-[10px] rounded-[33px] bg-white overflow-hidden"
+            >
+              <button class="w-full">
+                <div
+                  class="min-h-[75px] lg:min-h-[65px] py-[10px] flex justify-between items-center"
+                >
+                  <h3
+                    class="font-general text-[16px] lg:text-[16px] font-[500] text-black text-left w-[calc(100%-80px)]"
+                  >
+                    What are the layouts currently available?
+                  </h3>
+                  <div
+                    class="w-[45px] h-[45px] shrink-0 flex justify-center items-center rounded-full bg-[#f5f5f5]"
+                  >
+                    <div class="scale-[0.5] text-black">
+                      <div class="transition-transform">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="1"
+                            d="M10.152 17.5H7.848V9.99395H0V7.97177H7.848V0.5H10.152V7.97177H18V9.99395H10.152V17.5Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li
+              class="group w-full max-w-[720px] mx-auto pl-[30px] pr-[10px] rounded-[33px] bg-white overflow-hidden"
+            >
+              <button class="w-full">
+                <div
+                  class="min-h-[75px] lg:min-h-[65px] py-[10px] flex justify-between items-center"
+                >
+                  <h3
+                    class="font-general text-[16px] lg:text-[16px] font-[500] text-black text-left w-[calc(100%-80px)]"
+                  >
+                    What van chassis do you work on?
+                  </h3>
+                  <div
+                    class="w-[45px] h-[45px] shrink-0 flex justify-center items-center rounded-full bg-[#f5f5f5]"
+                  >
+                    <div class="scale-[0.5] text-black">
+                      <div class="transition-transform">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="1"
+                            d="M10.152 17.5H7.848V9.99395H0V7.97177H7.848V0.5H10.152V7.97177H18V9.99395H10.152V17.5Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li
+              class="group w-full max-w-[720px] mx-auto pl-[30px] pr-[10px] rounded-[33px] bg-white overflow-hidden"
+            >
+              <button class="w-full">
+                <div
+                  class="min-h-[75px] lg:min-h-[65px] py-[10px] flex justify-between items-center"
+                >
+                  <h3
+                    class="font-general text-[16px] lg:text-[16px] font-[500] text-black text-left w-[calc(100%-80px)]"
+                  >
+                    Do you offer financing?
+                  </h3>
+                  <div
+                    class="w-[45px] h-[45px] shrink-0 flex justify-center items-center rounded-full bg-[#f5f5f5]"
+                  >
+                    <div class="scale-[0.5] text-noovo-black">
+                      <div class="transition-transform">
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="1"
+                            d="M10.152 17.5H7.848V9.99395H0V7.97177H7.848V0.5H10.152V7.97177H18V9.99395H10.152V17.5Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </li>
+          </ul>
+          <div class="flex justify-center">
+            <a
+              class="group h-[55px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-[#1C1B1A] text-white px-[80px]"
+              href="/faq/"
+              ><div class="flex items-center">
+                <div>Read more FAQs</div>
+                <div
+                  class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                >
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0"
+                  >
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="relative bg-white overflow-hidden">
+      <div
+        class="absolute z-[2] top-0 left-0 right-0 h-[100px]"
+        style="background: linear-gradient(to top, transparent 0%, #fff 100%)"
+      ></div>
+      <div
+        class="relative z-[1] px-[30px] py-[40px] lg:pt-[100px] flex flex-col gap-[30px]"
+        style="opacity: 1; transform: none"
+      >
+        <div class="w-full max-w-[1200px] mx-auto lg:grid lg:grid-cols-2">
+          <div class="lg:max-w-[325px] flex flex-col gap-[40px] lg:gap-[20px]">
+            <p
+              class="font-general text-[16px] lg:text-[16px] font-[500] text-noovo-black text-center lg:text-left"
+            >
+              Subscribe to learn about our latest news, updates, and adventures.
+            </p>
+            <form class="flex flex-col gap-[15px] lg:max-w-[268px]">
+              <div class="relative">
+                <input
+                  class="w-full h-[50px] px-[20px] font-general bg-noovo-offwhite text-sm rounded-[15px] outline-none transition-all"
+                  type="text"
+                  autocomplete="on"
+                  name="firstname"
+                  value=""
+                /><label
+                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
+                  style="font-size: 14px; top: 26px; left: 4px"
+                  >Your First Name*</label
+                >
+                <div
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
+                  style="opacity: 0"
+                ></div>
+              </div>
+              <div class="relative">
+                <input
+                  class="w-full h-[50px] px-[20px] font-general bg-noovo-offwhite text-sm rounded-[15px] outline-none transition-all"
+                  type="text"
+                  autocomplete="on"
+                  name="email"
+                  value=""
+                /><label
+                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
+                  style="font-size: 14px; top: 26px; left: 4px"
+                  >Your Email*</label
+                >
+                <div
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
+                  style="opacity: 0"
+                ></div>
+              </div>
+              <div
+                class="relative h-[0px] opacity-0 overflow-hidden mt-[-15px]"
+              >
+                <input
+                  class="w-full h-[50px] px-[20px] font-general bg-noovo-offwhite text-sm rounded-[15px] outline-none transition-all"
+                  type="text"
+                  autocomplete="off"
+                  name="username"
+                  value=""
+                /><label
+                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
+                  style="font-size: 14px; top: 26px; left: 4px"
+                  >Username*</label
+                >
+                <div
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
+                  style="opacity: 0"
+                ></div>
+              </div>
+              <div class="relative">
+                <input
+                  class="w-full h-[50px] px-[20px] font-general bg-noovo-offwhite text-sm rounded-[15px] outline-none transition-all"
+                  type="text"
+                  autocomplete="off"
+                  name="zip_code"
+                  value=""
+                /><label
+                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
+                  style="font-size: 14px; top: 26px; left: 4px"
+                  >Zip Code*</label
+                >
+                <div
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
+                  style="opacity: 0"
+                ></div>
+              </div>
+              <div class="relative">
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="sms_consent"
+                    class="sr-only"
+                    name="sms_consent"
+                  /><label
+                    for="sms_consent"
+                    class="flex items-center cursor-pointer select-none"
+                    ><div
+                      class="w-[20px] h-[20px] shrink-0 border-2 rounded transition-all flex items-center justify-center bg-noovo-offwhite border-[rgba(0,0,0,0.1)]"
+                    ></div>
+                    <span class="ml-2 text-noovo-black opacity-50 text-[11px]"
+                      >I agree to receive promotional text messages from Noovo
+                      at the phone number provided. Consent is not a condition
+                      of purchase. Message and data rates may apply. You can opt
+                      out at any time by replying "STOP".</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <button
+                class="group h-[55px] px-[25px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm bg-[#1C1B1A] text-white"
+                type="submit"
+              >
+                <div class="flex items-center">
+                  <div>Subscribe</div>
+                  <div
+                    class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                  >
+                    <svg
+                      width="16"
+                      height="11"
+                      viewBox="0 0 16 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="shrink-0"
+                    >
+                      <path
+                        d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </form>
+          </div>
+          <div>
+            <div class="flex flex-col gap-[30px]">
+              <div class="flex gap-[11px] items-end">
+                <div class="pb-[2px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="104"
+                    height="18"
+                    viewBox="0 0 104 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.20996 0.130859L11.2012 6.25928H17.645L12.4319 10.0469L14.4231 16.1753L9.20996 12.3877L3.99681 16.1753L5.98806 10.0469L0.774907 6.25928H7.21871L9.20996 0.130859Z"
+                      fill="#131211"
+                    ></path>
+                    <path
+                      d="M30.4961 0.130859L32.4873 6.25928H38.9311L33.718 10.0469L35.7092 16.1753L30.4961 12.3877L25.2829 16.1753L27.2742 10.0469L22.061 6.25928H28.5048L30.4961 0.130859Z"
+                      fill="#131211"
+                    ></path>
+                    <path
+                      d="M51.7817 0.130859L53.773 6.25928H60.2168L55.0036 10.0469L56.9949 16.1753L51.7817 12.3877L46.5686 16.1753L48.5598 10.0469L43.3467 6.25928H49.7905L51.7817 0.130859Z"
+                      fill="#131211"
+                    ></path>
+                    <path
+                      d="M73.0679 0.130859L75.0591 6.25928H81.5029L76.2898 10.0469L78.281 16.1753L73.0679 12.3877L67.8547 16.1753L69.846 10.0469L64.6328 6.25928H71.0766L73.0679 0.130859Z"
+                      fill="#131211"
+                    ></path>
+                    <path
+                      d="M94.3535 0.130859L96.3448 6.25928H102.789L97.5754 10.0469L99.5667 16.1753L94.3535 12.3877L89.1404 16.1753L91.1316 10.0469L85.9185 6.25928H92.3623L94.3535 0.130859Z"
+                      fill="#131211"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="font-general font-[400] text-light-grey text-[16px] lg:text-[16px]"
+                >
+                  5/5 on
+                </p>
+                <svg
+                  width="71"
+                  height="22"
+                  viewBox="0 0 71 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1589_3090)">
+                    <path
+                      d="M8.96545 7.83782V10.1917H14.5961C14.4241 11.5122 13.9837 12.4791 13.3124 13.1588C12.4892 13.9815 11.2055 14.8818 8.96545 14.8818C5.4994 14.8818 2.78891 12.0877 2.78891 8.62282C2.78891 5.15795 5.4994 2.36387 8.96545 2.36387C10.8327 2.36387 12.2018 3.1012 13.2081 4.04808L14.8646 2.3927C13.4667 1.03336 11.5894 0 8.96545 0C4.21571 0 0.222656 3.86624 0.222656 8.61284C0.222656 13.3594 4.21571 17.2257 8.96545 17.2257C11.5317 17.2257 13.4667 16.383 14.9789 14.8141C16.53 13.2641 17.0181 11.0721 17.0181 9.31136C17.0181 8.76585 16.9793 8.25915 16.8939 7.83782H8.96545Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M24.0566 5.92383C20.9822 5.92383 18.4736 8.25888 18.4736 11.4843C18.4736 14.7096 20.9822 17.0447 24.0566 17.0447C27.131 17.0447 29.6396 14.6908 29.6396 11.4843C29.6396 8.27772 27.131 5.92383 24.0566 5.92383ZM24.0566 14.8527C22.3713 14.8527 20.9156 13.4645 20.9156 11.4843C20.9156 9.50401 22.3713 8.11584 24.0566 8.11584C25.7419 8.11584 27.1976 9.48405 27.1976 11.4843C27.1976 13.4845 25.7419 14.8527 24.0566 14.8527Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M51.4257 7.16786H51.3392C50.7933 6.51701 49.7404 5.92383 48.409 5.92383C45.632 5.92383 43.21 8.34536 43.21 11.4843C43.21 14.6232 45.6331 17.0447 48.409 17.0447C49.7404 17.0447 50.7933 16.4515 51.3392 15.7818H51.4257V16.5568C51.4257 18.6812 50.2863 19.8199 48.4567 19.8199C46.9634 19.8199 46.0336 18.7477 45.6508 17.8397L43.5251 18.72C44.1375 20.1936 45.7562 22.0019 48.4567 22.0019C51.3203 22.0019 53.7424 20.3177 53.7424 16.212V6.20989H51.4246V7.16675L51.4257 7.16786ZM48.6198 14.8527C46.9345 14.8527 45.6508 13.4168 45.6508 11.4843C45.6508 9.55169 46.9345 8.11584 48.6198 8.11584C50.3052 8.11584 51.5888 9.55169 51.5888 11.5031C51.5988 13.4457 50.2863 14.8527 48.6198 14.8527Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M36.5063 5.92383C33.4319 5.92383 30.9233 8.25888 30.9233 11.4843C30.9233 14.7096 33.4319 17.0447 36.5063 17.0447C39.5807 17.0447 42.0893 14.6908 42.0893 11.4843C42.0893 8.25888 39.5807 5.92383 36.5063 5.92383ZM36.5063 14.8527C34.821 14.8527 33.3653 13.4645 33.3653 11.4843C33.3653 9.50401 34.821 8.11584 36.5063 8.11584C38.1916 8.11584 39.6473 9.48405 39.6473 11.4843C39.6473 13.4845 38.1916 14.8527 36.5063 14.8527Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M55.6582 0.230469H58.0614V17.0448H55.6582V0.230469Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M65.4827 14.8516C64.2379 14.8516 63.3569 14.2872 62.7822 13.1674L70.2224 10.0961L69.9739 9.4641C69.5146 8.22007 68.0967 5.92383 65.2142 5.92383C62.3317 5.92383 59.9663 8.17239 59.9663 11.4843C59.9663 14.6043 62.3218 17.0447 65.4827 17.0447C68.0301 17.0447 69.5046 15.4847 70.117 14.5855L68.2209 13.3226C67.5885 14.2417 66.7275 14.8538 65.4827 14.8538V14.8516ZM65.3107 8.0094C66.2971 8.0094 67.1392 8.51611 67.4177 9.23458L62.3906 11.3113C62.3906 8.97624 64.047 8.0094 65.3118 8.0094H65.3107Z"
+                      fill="black"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1589_3090">
+                      <rect
+                        width="70"
+                        height="22"
+                        fill="white"
+                        transform="translate(0.222656)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p
+                class="font-general lg:tracking-[-2.5px] text-black max-w-[480px] text-[40px] lg:text-[40px] leading-[44px] lg:leading-[44px] font-[400] tracking-[-1.5px]"
+              >
+                “I love your build because you made it for people like us who
+                don't know what we're doing. It just works.”
+              </p>
+              <div class="flex items-center gap-[20px]">
+                <div class="w-[72px] h-[48px] rounded-[20px] overflow-hidden">
+                  <img
+                    src="/assets/rr-1.jpeg"
+                    alt="Reviewer"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col gap-[4px]">
+                  <p
+                    class="font-general text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black font-[500]"
+                  >
+                    Jane, Traveling nurse
+                  </p>
+                  <div class="flex items-center gap-[4px]">
+                    <svg
+                      width="13"
+                      height="12"
+                      viewBox="0 0 13 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1589_3102)">
+                        <path
+                          d="M8.18579 1.13627L5.50192 3.82014L2.81804 4.82659L1.81159 5.83304L6.50837 10.5298L7.51482 9.52336L8.52127 6.83949L11.2051 4.15562M4.15998 8.18143L1.14062 11.2008M7.8503 0.800781L11.5406 4.4911"
+                          stroke="#131211"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1589_3102">
+                          <rect
+                            width="12"
+                            height="12"
+                            fill="white"
+                            transform="translate(0.34082)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p
+                      class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                    >
+                      Over 2700 miles traveled from Las Vegas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-[1px] my-[40px] bg-noovo-black opacity-10"></div>
+            <nav
+              class="grid grid-cols-2 lg:grid-cols-4 gap-[40px] lg:gap-[30px] lg:pr-[40px]"
+            >
+              <div class="flex flex-col gap-[10px]">
+                <p
+                  class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                >
+                  Buy
+                </p>
+                <ul class="flex flex-col gap-[2px]">
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/camper-vans-for-sale/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Inventory
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/camper-vans-for-rent/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Rentals
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/rv-dealers/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Find a Dealer
+                      </p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <p
+                  class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                >
+                  Models
+                </p>
+                <ul class="flex flex-col gap-[2px]">
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/noovo-lite/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        The Lite
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/noovo-pop/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        The Pop
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/noovo-plus/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        The Plus
+                      </p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <p
+                  class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                >
+                  Help Me Choose
+                </p>
+                <ul class="flex flex-col gap-[2px]">
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/configure/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Configure
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/blog/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Blog
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/mission/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Mission
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/van-events/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Events
+                      </p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <p
+                  class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                >
+                  Noovo
+                </p>
+                <ul class="flex flex-col gap-[2px]">
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/faq/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        FAQ
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/owner-resources/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Resources
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/service/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Service
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/warranty/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Warranty
+                      </p></a
+                    >
+                  </li>
+                  <li class="my-[1px] lg:my-0">
+                    <a
+                      class="group hover:opacity-50 transition-all"
+                      href="/contact/"
+                      ><p
+                        class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
+                      >
+                        Contact
+                      </p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="w-full max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-end"
+        >
+          <div class="flex flex-col gap-[30px] mb-[60px] lg:mb-0">
+            <svg
+              width="117"
+              height="43"
+              viewBox="0 0 117 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.773 21.7138H15.2982V9.88104C15.2982 6.89378 12.8754 4.47235 9.8865 4.47235C6.89759 4.47235 4.47483 6.89378 4.47483 9.88104V21.7138H0V9.88104C0 4.4243 4.42674 0 9.8865 0C15.3462 0 19.773 4.4243 19.773 9.88104V21.7138Z"
+                fill="#131211"
+              ></path>
+              <path
+                d="M34.9548 4.47235C38.5548 4.47235 41.4848 7.4007 41.4848 10.9987C41.4848 14.5968 38.5548 17.5251 34.9548 17.5251C31.3548 17.5251 28.4248 14.5968 28.4248 10.9987C28.4248 7.4007 31.3548 4.47235 34.9548 4.47235ZM34.9548 0C28.8777 0 23.95 4.92502 23.95 10.9987C23.95 17.0725 28.8777 21.9975 34.9548 21.9975C41.0319 21.9975 45.9596 17.0725 45.9596 10.9987C45.9596 4.92502 41.0319 0 34.9548 0Z"
+                fill="#131211"
+              ></path>
+              <path
+                d="M105.995 4.47235C109.595 4.47235 112.525 7.4007 112.525 10.9987C112.525 14.5968 109.595 17.5251 105.995 17.5251C102.395 17.5251 99.4652 14.5968 99.4652 10.9987C99.4652 7.4007 102.395 4.47235 105.995 4.47235ZM105.995 0C99.9181 0 94.9904 4.92502 94.9904 10.9987C94.9904 17.0725 99.9181 21.9975 105.995 21.9975C112.072 21.9975 117 17.0725 117 10.9987C117 4.92502 112.072 0 105.995 0Z"
+                fill="#131211"
+              ></path>
+              <path
+                d="M88.1021 0.289889L83.6025 16.1873L79.0408 0.289889H74.386L79.7899 19.1265C80.8912 22.9648 86.337 22.9555 87.4243 19.1125L92.7522 0.289889H88.1021Z"
+                fill="#131211"
+              ></path>
+              <path
+                d="M61.143 4.47235C64.743 4.47235 67.673 7.4007 67.673 10.9987C67.673 14.5968 64.743 17.5251 61.143 17.5251C57.543 17.5251 54.613 14.5968 54.613 10.9987C54.613 7.4007 57.543 4.47235 61.143 4.47235ZM61.143 0C55.0659 0 50.1382 4.92502 50.1382 10.9987C50.1382 17.0725 55.0659 21.9975 61.143 21.9975C67.2201 21.9975 72.1478 17.0725 72.1478 10.9987C72.1478 4.92502 67.2201 0 61.143 0Z"
+                fill="#131211"
+              ></path>
+            </svg>
+            <ul class="flex flex-col gap-[10px]">
+              <li class="flex items-center gap-[10px]">
+                <div
+                  class="w-[35px] h-[35px] border-[rgba(0,0,0,0.1)] border-[1px] rounded-full flex justify-center items-center"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1589_3029)">
+                      <path
+                        d="M14.4987 11.218L14.4986 11.218V11.2304L14.4986 13.4885L14.4986 13.4905C14.4991 13.6304 14.4704 13.7688 14.4143 13.897C14.3581 14.0253 14.2757 14.1404 14.1722 14.2351C14.0688 14.3298 13.9466 14.402 13.8135 14.4469C13.6817 14.4914 13.5421 14.5082 13.4034 14.4963C11.162 14.2524 9.00905 13.4877 7.11737 12.2633L7.11738 12.2633L7.11348 12.2608C5.35315 11.1445 3.86078 9.65503 2.74229 7.89835L2.74231 7.89834L2.73992 7.89466C1.50889 5.99814 0.742541 3.83913 0.502793 1.59232C0.490817 1.45462 0.507448 1.3159 0.551675 1.18485C0.596283 1.05267 0.668003 0.931132 0.762326 0.828008C0.856651 0.724882 0.971516 0.642425 1.09964 0.585942C1.22772 0.529482 1.36621 0.500229 1.50629 0.500073H3.76858V0.500097L3.77349 0.500049C4.01847 0.497643 4.25581 0.58423 4.44131 0.743441C4.62626 0.902183 4.74706 1.12228 4.78162 1.3628C4.88215 2.12201 5.06832 2.86745 5.33658 3.58492L5.337 3.58605C5.40472 3.76585 5.41937 3.9612 5.37923 4.14901C5.33919 4.3364 5.24625 4.50857 5.11127 4.64516L4.15449 5.60004C3.99494 5.75928 3.96167 6.0056 4.07326 6.20146C5.1915 8.16416 6.81974 9.78913 8.78609 10.905C8.98155 11.0159 9.227 10.9828 9.38607 10.8241L10.3419 9.8701C10.3422 9.8698 10.3425 9.8695 10.3428 9.86919C10.4797 9.73445 10.6525 9.64147 10.8408 9.60139C11.0295 9.56122 11.2258 9.5759 11.4064 9.64365L11.4076 9.64407C12.1263 9.91175 12.8731 10.0975 13.6336 10.1978C13.878 10.2327 14.101 10.3558 14.2603 10.5435C14.4201 10.7317 14.5048 10.9717 14.4987 11.218Z"
+                        stroke="#131211"
+                        stroke-opacity="0.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1589_3029">
+                        <rect
+                          width="15"
+                          height="15"
+                          fill="white"
+                          transform="translate(-0.000976562)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <a target="_blank" href="tel:+17252156360"
+                  ><p
+                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                  >
+                    +1(725)215-6360
+                  </p></a
+                >
+              </li>
+              <li class="flex items-center gap-[10px]">
+                <div
+                  class="w-[35px] h-[35px] border-[rgba(0,0,0,0.1)] border-[1px] rounded-full flex justify-center items-center"
+                >
+                  <div class="opacity-60">
+                    <svg
+                      width="14"
+                      height="13"
+                      viewBox="0 0 14 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.2 1H1.8C1.08203 1 0.5 1.61561 0.5 2.375V10.625C0.5 11.3844 1.08203 12 1.8 12H12.2C12.918 12 13.5 11.3844 13.5 10.625V2.375C13.5 1.61561 12.918 1 12.2 1Z"
+                        stroke="#131211"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M13.5 3.0625L7.6695 6.98125C7.46883 7.11423 7.23681 7.18476 7 7.18476C6.76319 7.18476 6.53117 7.11423 6.3305 6.98125L0.5 3.0625"
+                        stroke="#131211"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                >
+                  contact@noovolife.com
+                </p>
+              </li>
+              <li class="flex items-center gap-[10px]">
+                <div
+                  class="w-[35px] h-[35px] border-[rgba(0,0,0,0.1)] border-[1px] rounded-full flex justify-center items-center"
+                >
+                  <div class="opacity-60">
+                    <svg
+                      width="13"
+                      height="12"
+                      viewBox="0 0 13 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1589_3102)">
+                        <path
+                          d="M8.18579 1.13627L5.50192 3.82014L2.81804 4.82659L1.81159 5.83304L6.50837 10.5298L7.51482 9.52336L8.52127 6.83949L11.2051 4.15562M4.15998 8.18143L1.14062 11.2008M7.8503 0.800781L11.5406 4.4911"
+                          stroke="#131211"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1589_3102">
+                          <rect
+                            width="12"
+                            height="12"
+                            fill="white"
+                            transform="translate(0.34082)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+                <p
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                >
+                  4495 Copper Sage St<br />Las Vegas, NV 89115
+                </p>
+              </li>
+            </ul>
+            <p
+              class="font-general font-[400] opacity-40 text-[11px] lg:text-[11px] lg:pr-[60px]"
+            >
+              Noovo provides the information on this website for general
+              purposes only. We make no guarantees or warranties, express or
+              implied, regarding the accuracy, reliability, or availability of
+              the information, products, services, or related graphics and
+              renderings on this site for any purpose.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center lg:items-end pt-[40px] lg:pt-0 pb-[20px] lg:pb-0 border-t border-[rgba(0,0,0,0.1)] lg:border-0"
+          >
+            <div class="flex flex-col gap-[10px]">
+              <ul
+                class="flex justify-center lg:justify-normal items-center gap-[10px]"
+              >
+                <li>
+                  <a
+                    href="https://www.instagram.com/noovovans/"
+                    target="_blank"
+                    class="group inline-block overflow-hidden h-[18px] w-[20px] shrink-0"
+                    title="Go to Rejouice's website"
+                    ><div
+                      class="group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500 mb-[2px]"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.42707 0H12.5671C15.2871 0 17.4971 2.21 17.4971 4.93V12.07C17.4971 13.3775 16.9777 14.6315 16.0531 15.556C15.1286 16.4806 13.8746 17 12.5671 17H5.42707C2.70707 17 0.49707 14.79 0.49707 12.07V4.93C0.49707 3.62248 1.01648 2.36852 1.94103 1.44396C2.86559 0.519409 4.11955 0 5.42707 0ZM5.25707 1.7C4.44551 1.7 3.66719 2.02239 3.09332 2.59625C2.51946 3.17011 2.19707 3.94844 2.19707 4.76V12.24C2.19707 13.9315 3.56557 15.3 5.25707 15.3H12.7371C13.5486 15.3 14.327 14.9776 14.9008 14.4037C15.4747 13.8299 15.7971 13.0516 15.7971 12.24V4.76C15.7971 3.0685 14.4286 1.7 12.7371 1.7H5.25707ZM13.4596 2.975C13.7414 2.975 14.0116 3.08694 14.2109 3.2862C14.4101 3.48546 14.5221 3.75571 14.5221 4.0375C14.5221 4.31929 14.4101 4.58954 14.2109 4.7888C14.0116 4.98806 13.7414 5.1 13.4596 5.1C13.1778 5.1 12.9075 4.98806 12.7083 4.7888C12.509 4.58954 12.3971 4.31929 12.3971 4.0375C12.3971 3.75571 12.509 3.48546 12.7083 3.2862C12.9075 3.08694 13.1778 2.975 13.4596 2.975ZM8.99707 4.25C10.1242 4.25 11.2052 4.69777 12.0023 5.4948C12.7993 6.29183 13.2471 7.37283 13.2471 8.5C13.2471 9.62717 12.7993 10.7082 12.0023 11.5052C11.2052 12.3022 10.1242 12.75 8.99707 12.75C7.8699 12.75 6.7889 12.3022 5.99187 11.5052C5.19484 10.7082 4.74707 9.62717 4.74707 8.5C4.74707 7.37283 5.19484 6.29183 5.99187 5.4948C6.7889 4.69777 7.8699 4.25 8.99707 4.25ZM8.99707 5.95C8.32077 5.95 7.67217 6.21866 7.19395 6.69688C6.71573 7.1751 6.44707 7.8237 6.44707 8.5C6.44707 9.1763 6.71573 9.82491 7.19395 10.3031C7.67217 10.7813 8.32077 11.05 8.99707 11.05C9.67337 11.05 10.322 10.7813 10.8002 10.3031C11.2784 9.82491 11.5471 9.1763 11.5471 8.5C11.5471 7.8237 11.2784 7.1751 10.8002 6.69688C10.322 6.21866 9.67337 5.95 8.99707 5.95Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="mt-[4px] group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.42707 0H12.5671C15.2871 0 17.4971 2.21 17.4971 4.93V12.07C17.4971 13.3775 16.9777 14.6315 16.0531 15.556C15.1286 16.4806 13.8746 17 12.5671 17H5.42707C2.70707 17 0.49707 14.79 0.49707 12.07V4.93C0.49707 3.62248 1.01648 2.36852 1.94103 1.44396C2.86559 0.519409 4.11955 0 5.42707 0ZM5.25707 1.7C4.44551 1.7 3.66719 2.02239 3.09332 2.59625C2.51946 3.17011 2.19707 3.94844 2.19707 4.76V12.24C2.19707 13.9315 3.56557 15.3 5.25707 15.3H12.7371C13.5486 15.3 14.327 14.9776 14.9008 14.4037C15.4747 13.8299 15.7971 13.0516 15.7971 12.24V4.76C15.7971 3.0685 14.4286 1.7 12.7371 1.7H5.25707ZM13.4596 2.975C13.7414 2.975 14.0116 3.08694 14.2109 3.2862C14.4101 3.48546 14.5221 3.75571 14.5221 4.0375C14.5221 4.31929 14.4101 4.58954 14.2109 4.7888C14.0116 4.98806 13.7414 5.1 13.4596 5.1C13.1778 5.1 12.9075 4.98806 12.7083 4.7888C12.509 4.58954 12.3971 4.31929 12.3971 4.0375C12.3971 3.75571 12.509 3.48546 12.7083 3.2862C12.9075 3.08694 13.1778 2.975 13.4596 2.975ZM8.99707 4.25C10.1242 4.25 11.2052 4.69777 12.0023 5.4948C12.7993 6.29183 13.2471 7.37283 13.2471 8.5C13.2471 9.62717 12.7993 10.7082 12.0023 11.5052C11.2052 12.3022 10.1242 12.75 8.99707 12.75C7.8699 12.75 6.7889 12.3022 5.99187 11.5052C5.19484 10.7082 4.74707 9.62717 4.74707 8.5C4.74707 7.37283 5.19484 6.29183 5.99187 5.4948C6.7889 4.69777 7.8699 4.25 8.99707 4.25ZM8.99707 5.95C8.32077 5.95 7.67217 6.21866 7.19395 6.69688C6.71573 7.1751 6.44707 7.8237 6.44707 8.5C6.44707 9.1763 6.71573 9.82491 7.19395 10.3031C7.67217 10.7813 8.32077 11.05 8.99707 11.05C9.67337 11.05 10.322 10.7813 10.8002 10.3031C11.2784 9.82491 11.5471 9.1763 11.5471 8.5C11.5471 7.8237 11.2784 7.1751 10.8002 6.69688C10.322 6.21866 9.67337 5.95 8.99707 5.95Z"
+                          fill="black"
+                        ></path>
+                      </svg></div
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.fr/noovovans/"
+                    target="_blank"
+                    class="group inline-block overflow-hidden h-[18px] w-[20px] shrink-0"
+                    title="Go to Rejouice's website"
+                    ><div
+                      class="group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500 mb-[2px]"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.01527 14.6124C6.03482 14.3268 6.07562 14.042 6.13682 13.7615C6.19037 13.5108 6.35272 12.801 6.59072 11.7725L6.59667 11.747L6.92562 10.3292C6.99277 10.0402 7.04462 9.8158 7.07947 9.741C6.91441 9.35941 6.83214 8.94716 6.83807 8.53145C6.83807 7.395 7.48067 6.5144 8.31367 6.5144C8.61967 6.5093 8.91207 6.6419 9.11437 6.8765C9.31667 7.1111 9.41017 7.42305 9.37107 7.7231C9.37107 8.10815 9.29882 8.4014 8.98602 9.45285C8.93757 9.61414 8.89081 9.77593 8.84577 9.9382C8.80454 10.0852 8.76685 10.2331 8.73272 10.3819C8.65112 10.71 8.72592 11.0594 8.93417 11.3212C9.03515 11.4497 9.16554 11.552 9.31435 11.6196C9.46316 11.6873 9.62604 11.7181 9.78927 11.7096C11.0575 11.7096 11.9993 10.0224 11.9993 7.8438C11.9993 6.1693 10.9028 5.0609 9.08207 5.0609C8.6263 5.04396 8.17196 5.12178 7.74781 5.28945C7.32366 5.45712 6.93892 5.71099 6.61792 6.035C6.29004 6.36611 6.03137 6.75918 5.85698 7.19129C5.68258 7.6234 5.59596 8.08591 5.60217 8.55185C5.58104 9.05399 5.73486 9.5479 6.03737 9.94925C6.19122 10.0683 6.24987 10.2748 6.18612 10.4508C6.15127 10.5936 6.06712 10.92 6.03567 11.0288C6.02689 11.0821 6.00581 11.1327 5.97409 11.1765C5.94237 11.2204 5.90088 11.2562 5.85292 11.2812C5.80639 11.3055 5.75473 11.3183 5.70225 11.3186C5.64977 11.3189 5.59797 11.3066 5.55117 11.2829C4.56517 10.8758 4.02457 9.7716 4.02457 8.3589C4.02457 5.82165 6.14192 3.6125 9.28777 3.6125C11.9525 3.6125 13.9466 5.59215 13.9466 7.9815C13.9466 10.9837 12.3044 13.1699 9.96012 13.1699C9.62668 13.1796 9.29562 13.1109 8.99357 12.9693C8.69152 12.8277 8.42691 12.6172 8.22102 12.3548L8.18447 12.5052L8.00852 13.2294L8.00682 13.2362C7.88272 13.7462 7.79602 14.1007 7.76202 14.2333C7.67192 14.535 7.55802 14.8308 7.42202 15.1173C9.11335 15.5203 10.8948 15.2602 12.4003 14.3904C13.9058 13.5206 15.0209 12.1071 15.5164 10.4405C16.012 8.77392 15.8503 6.98082 15.0646 5.42976C14.2789 3.87869 12.929 2.68751 11.2922 2.10103C9.65536 1.51455 7.85608 1.57733 6.26414 2.27647C4.67219 2.97562 3.40853 4.258 2.73288 5.86006C2.05723 7.46211 2.02092 9.26212 2.63141 10.8901C3.2419 12.5181 4.45282 13.8496 6.01527 14.6124ZM8.99707 17C4.30252 17 0.49707 13.1946 0.49707 8.5C0.49707 3.80545 4.30252 0 8.99707 0C13.6916 0 17.4971 3.80545 17.4971 8.5C17.4971 13.1946 13.6916 17 8.99707 17Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="mt-[4px] group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.01527 14.6124C6.03482 14.3268 6.07562 14.042 6.13682 13.7615C6.19037 13.5108 6.35272 12.801 6.59072 11.7725L6.59667 11.747L6.92562 10.3292C6.99277 10.0402 7.04462 9.8158 7.07947 9.741C6.91441 9.35941 6.83214 8.94716 6.83807 8.53145C6.83807 7.395 7.48067 6.5144 8.31367 6.5144C8.61967 6.5093 8.91207 6.6419 9.11437 6.8765C9.31667 7.1111 9.41017 7.42305 9.37107 7.7231C9.37107 8.10815 9.29882 8.4014 8.98602 9.45285C8.93757 9.61414 8.89081 9.77593 8.84577 9.9382C8.80454 10.0852 8.76685 10.2331 8.73272 10.3819C8.65112 10.71 8.72592 11.0594 8.93417 11.3212C9.03515 11.4497 9.16554 11.552 9.31435 11.6196C9.46316 11.6873 9.62604 11.7181 9.78927 11.7096C11.0575 11.7096 11.9993 10.0224 11.9993 7.8438C11.9993 6.1693 10.9028 5.0609 9.08207 5.0609C8.6263 5.04396 8.17196 5.12178 7.74781 5.28945C7.32366 5.45712 6.93892 5.71099 6.61792 6.035C6.29004 6.36611 6.03137 6.75918 5.85698 7.19129C5.68258 7.6234 5.59596 8.08591 5.60217 8.55185C5.58104 9.05399 5.73486 9.5479 6.03737 9.94925C6.19122 10.0683 6.24987 10.2748 6.18612 10.4508C6.15127 10.5936 6.06712 10.92 6.03567 11.0288C6.02689 11.0821 6.00581 11.1327 5.97409 11.1765C5.94237 11.2204 5.90088 11.2562 5.85292 11.2812C5.80639 11.3055 5.75473 11.3183 5.70225 11.3186C5.64977 11.3189 5.59797 11.3066 5.55117 11.2829C4.56517 10.8758 4.02457 9.7716 4.02457 8.3589C4.02457 5.82165 6.14192 3.6125 9.28777 3.6125C11.9525 3.6125 13.9466 5.59215 13.9466 7.9815C13.9466 10.9837 12.3044 13.1699 9.96012 13.1699C9.62668 13.1796 9.29562 13.1109 8.99357 12.9693C8.69152 12.8277 8.42691 12.6172 8.22102 12.3548L8.18447 12.5052L8.00852 13.2294L8.00682 13.2362C7.88272 13.7462 7.79602 14.1007 7.76202 14.2333C7.67192 14.535 7.55802 14.8308 7.42202 15.1173C9.11335 15.5203 10.8948 15.2602 12.4003 14.3904C13.9058 13.5206 15.0209 12.1071 15.5164 10.4405C16.012 8.77392 15.8503 6.98082 15.0646 5.42976C14.2789 3.87869 12.929 2.68751 11.2922 2.10103C9.65536 1.51455 7.85608 1.57733 6.26414 2.27647C4.67219 2.97562 3.40853 4.258 2.73288 5.86006C2.05723 7.46211 2.02092 9.26212 2.63141 10.8901C3.2419 12.5181 4.45282 13.8496 6.01527 14.6124ZM8.99707 17C4.30252 17 0.49707 13.1946 0.49707 8.5C0.49707 3.80545 4.30252 0 8.99707 0C13.6916 0 17.4971 3.80545 17.4971 8.5C17.4971 13.1946 13.6916 17 8.99707 17Z"
+                          fill="black"
+                        ></path>
+                      </svg></div
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/11541098/"
+                    target="_blank"
+                    class="group inline-block overflow-hidden h-[18px] w-[20px] shrink-0"
+                    title="Go to Rejouice's website"
+                    ><div
+                      class="group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500 mb-[2px]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-linkedin"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                    </div>
+                    <div
+                      class="mt-[4px] group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-linkedin"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg></div
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/noovovans"
+                    target="_blank"
+                    class="group inline-block overflow-hidden h-[18px] w-[20px] shrink-0"
+                    title="Go to Rejouice's website"
+                    ><div
+                      class="group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500 mb-[2px]"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.3488 8.5213C17.3488 3.81754 13.5312 0 8.82746 0C4.1237 0 0.306152 3.81754 0.306152 8.5213C0.306152 12.6456 3.23748 16.0797 7.12319 16.8722V11.0777H5.41893V8.5213H7.12319V6.39098C7.12319 4.74637 8.46104 3.40852 10.1057 3.40852H12.236V5.96491H10.5317C10.063 5.96491 9.67959 6.34837 9.67959 6.81704V8.5213H12.236V11.0777H9.67959V17C13.9828 16.5739 17.3488 12.9439 17.3488 8.5213Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div
+                      class="mt-[4px] group-hover:translate-y-[calc(-100%-4px)] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                    >
+                      <svg
+                        width="18"
+                        height="17"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.3488 8.5213C17.3488 3.81754 13.5312 0 8.82746 0C4.1237 0 0.306152 3.81754 0.306152 8.5213C0.306152 12.6456 3.23748 16.0797 7.12319 16.8722V11.0777H5.41893V8.5213H7.12319V6.39098C7.12319 4.74637 8.46104 3.40852 10.1057 3.40852H12.236V5.96491H10.5317C10.063 5.96491 9.67959 6.34837 9.67959 6.81704V8.5213H12.236V11.0777H9.67959V17C13.9828 16.5739 17.3488 12.9439 17.3488 8.5213Z"
+                          fill="black"
+                        ></path>
+                      </svg></div
+                  ></a>
+                </li>
+              </ul>
+              <div class="flex flex-col gap-[20px]">
+                <div class="flex justify-center lg:justify-start gap-[10px]">
+                  <a
+                    title="Go to legal page"
+                    class="hover:opacity-50 transition-all"
+                    href="/cookies/"
+                    ><p
+                      class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black"
+                    >
+                      Cookies
+                    </p></a
+                  ><a
+                    title="Go to terms page"
+                    class="hover:opacity-50 transition-all"
+                    href="/terms/"
+                    ><p
+                      class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black"
+                    >
+                      Terms
+                    </p></a
+                  ><a
+                    title="Go to privacy policy page"
+                    class="hover:opacity-50 transition-all"
+                    href="/privacy-policy/"
+                    ><p
+                      class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black"
+                    >
+                      Privacy Policy
+                    </p></a
+                  >
+                </div>
+                <div class="flex gap-[2px]">
+                  <p
+                    class="font-general text-noovo-grey font-[400] text-[12px] lg:text-[12px]"
+                  >
+                    © 2024 Noovo. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-[20px] flex gap-[3px] items-center">
+              <p
+                class="font-general font-[400] text-[12px] lg:text-[12px] opacity-70"
+              >
+                Made by
+              </p>
+              <a
+                class="group inline-block overflow-hidden h-[10px] w-[61px] shrink-0"
+                title="Go to Rejouice's website"
+                target="_blank"
+                href="https://rejouice.com"
+                ><div
+                  class="group-hover:translate-y-[-100%] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                >
+                  <img
+                    width="61"
+                    height="10"
+                    src="/assets/rejouice.png"
+                    alt="Logo"
+                    class="h-full w-full object-contain object-left"
+                  />
+                </div>
+                <div
+                  class="group-hover:translate-y-[-100%] h-full transition-all ease-[cubic-bezier(0.16, 1, 0.3, 1)] duration-500"
+                >
+                  <img
+                    width="61"
+                    height="10"
+                    src="/assets/rejouice.png"
+                    alt="Logo"
+                    class="h-full w-full object-contain object-left"
+                  /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
