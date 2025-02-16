@@ -217,19 +217,13 @@
                 class="block max-[1000px]:hidden w-[50px] h-[50px] flex justify-center items-center rounded-full bg-grey"
               >
                 <div
-                  class="h-full aspect-square"
-                  style="
-                    background-image: url('/assets/van-black.png');
-                    background-position: center center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                  "
+                  class="h-full aspect-square bg-[url(/assets/van-black.png)] bg-center bg-no-repeat bg-cover"
                 ></div>
               </div>
               <div class="flex items-center">
                 <div>Build your van</div>
                 <div
-                  class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                  class="w-0 opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
                 >
                   <svg
                     width="16"
@@ -260,7 +254,7 @@
     <main>
       <!-- Landing Page -->
       <section
-        class="relative h-screen bg-cover bg-center text-white bg-[url(./assets/Home_page_header_plus_83242eaa85.webp)] backdrop-brightness-50 w-screen"
+        class="relative h-screen  text-white bg-[url(https://res.cloudinary.com/ht4hxwcbr/image/upload/v1730397965/Product_lite_header_0e27724aa7.webp)] bg-cover bg-center bg-no-repeat backdrop-brightness-50 w-screen "
       >
         <div class="absolute inset-0 backdrop-brightness-75"></div>
 
@@ -312,29 +306,22 @@
           </div>
         </article>
       </section>
-      <!-- vans section -->
+      <!-- Vans Section -->
       <section
         class="py-[50px] xl:py-[100px] px-[36px] xl:px-[120px] flex flex-col gap-[50px] lg:gap-[100px]"
       >
         <div class="flex flex-col items-center gap-[30px]">
-          <div class="css-zvi4ix" style="animation-delay: 200ms">
+          <!-- Replace inline animation-delay with Tailwind's arbitrary value -->
+          <div class="css-zvi4ix delay-[200ms]">
             <h1
               class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-noovo-black text-center"
             >
               <span>We build camper vans<br />people </span>
               <span class="relative inline-block">
                 <span>actually</span>
+                <!-- Replace inline transition-timing-function and transform with arbitrary values -->
                 <span
-                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[#1C1B1A] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
-                  style="
-                    transition-timing-function: cubic-bezier(
-                      0,
-                      0.7,
-                      0.95,
-                      0.99
-                    );
-                    transform: scaleX(1);
-                  "
+                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[#1C1B1A] origin-left transition-all delay-[0.5s] duration-[0.5s] block transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)] scale-x-100"
                 ></span>
               </span>
               <span> want to live in.</span>
@@ -342,38 +329,32 @@
           </div>
         </div>
         <ul class="grid grid-cols-2 gap-10 w-full">
-          <!-- card 1 -->
+          <!-- Card 1 -->
           <li
             class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
           >
-            <!-- image -->
+            <!-- Image -->
             <div
-              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
-              style="
-                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
-                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/19cd5db746c2179d89f26cbb409ac073_6c15af1f32.webp');
-                background-size: cover;
-                background-position: center;
-              "
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl bg-[url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/19cd5db746c2179d89f26cbb409ac073_6c15af1f32.webp')] bg-cover bg-center transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)]"
             ></div>
-            <!-- desc -->
+            <!-- Description -->
             <div
               class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
             >
               <h3
-                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:bg-[currentcolor] [&_span]:font-[500] [&_span]:after:h-[0px]"
               >
                 Noovo <span>Lite</span>
               </h3>
               <div>
                 <p
-                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&_span]:font-[500]"
                 >
                   Starts at $162,700<br />or from <span>$1,087/mo</span>
                 </p>
               </div>
             </div>
-            <!-- buttons -->
+            <!-- Buttons -->
             <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
               <li>
                 <a
@@ -383,7 +364,7 @@
                   <div class="flex items-center">
                     <div>Explore Lite</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -416,7 +397,7 @@
                   <div class="flex items-center">
                     <div>See inventory</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -443,39 +424,32 @@
               </li>
             </ul>
           </li>
-          <!-- card 2 -->
-
+          <!-- Card 2 -->
           <li
             class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
           >
-            <!-- image -->
+            <!-- Image -->
             <div
-              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
-              style="
-                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
-                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101381/5b3d9635fe523f3f371779619e8a3431_4ab50bbbaf.webp');
-                background-size: cover;
-                background-position: center;
-              "
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl bg-[url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101381/5b3d9635fe523f3f371779619e8a3431_4ab50bbbaf.webp')] bg-cover bg-center transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)]"
             ></div>
-            <!-- desc -->
+            <!-- Description -->
             <div
               class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
             >
               <h3
-                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:bg-[currentcolor] [&_span]:font-[500] [&_span]:after:h-[0px]"
               >
                 Noovo <span>Pop</span>
               </h3>
               <div>
                 <p
-                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&_span]:font-[500]"
                 >
                   Starts at $162,700<br />or from <span>$1,087/mo</span>
                 </p>
               </div>
             </div>
-            <!-- buttons -->
+            <!-- Buttons -->
             <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
               <li>
                 <a
@@ -485,7 +459,7 @@
                   <div class="flex items-center">
                     <div>Explore Lite</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -518,7 +492,7 @@
                   <div class="flex items-center">
                     <div>See inventory</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -545,38 +519,32 @@
               </li>
             </ul>
           </li>
-          <!-- card 3 -->
+          <!-- Card 3 -->
           <li
             class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] flex flex-col items-center justify-between relative rounded-2xl overflow-hidden"
           >
-            <!-- image -->
+            <!-- Image -->
             <div
-              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl"
-              style="
-                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
-                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/396471adbfd8d579ca1ace00c9ef6964_523dda1a97.webp');
-                background-size: cover;
-                background-position: center;
-              "
+              class="absolute inset-0 z-[1] hover:scale-[1.07] hover:duration-[5s] duration-[0.5s] rounded-2xl bg-[url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725101378/396471adbfd8d579ca1ace00c9ef6964_523dda1a97.webp')] bg-cover bg-center transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)]"
             ></div>
-            <!-- desc -->
+            <!-- Description -->
             <div
               class="relative z-[2] flex flex-col gap-[10px] pointer-events-none"
             >
               <h3
-                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px]"
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] text-black lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:bg-[currentcolor] [&_span]:font-[500] [&_span]:after:h-[0px]"
               >
                 Noovo <span>Plus</span>
               </h3>
               <div>
                 <p
-                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&amp;_span]:font-[500]"
+                  class="font-general text-gray-600 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] [&_span]:font-[500]"
                 >
                   Starts at $162,700<br />or from <span>$1,087/mo</span>
                 </p>
               </div>
             </div>
-            <!-- buttons -->
+            <!-- Buttons -->
             <ul class="relative z-[3] w-full flex justify-center gap-[15px]">
               <li>
                 <a
@@ -586,7 +554,7 @@
                   <div class="flex items-center">
                     <div>Explore Lite</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -619,7 +587,7 @@
                   <div class="flex items-center">
                     <div>See inventory</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -646,22 +614,16 @@
               </li>
             </ul>
           </li>
-          <!-- card 4 -->
+          <!-- Card 4 -->
           <li
             class="col-span-1 max-[900px]:col-span-2 h-[600px] max-[900px]:h-[600px] p-[45px] rounded-2xl group overflow-hidden cursor-pointer relative flex flex-col text-center justify-center gap-[20px]"
           >
             <div
-              class="absolute inset-0 z-[1] group-hover:scale-[1.07] group-hover:duration-[5s] duration-[0.5s]"
-              style="
-                transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
-                background: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725352734/Our_Vans_for_sale_0c4e42c0c6.webp');
-                background-size: cover;
-                background-position: center;
-              "
+              class="absolute inset-0 z-[1] group-hover:scale-[1.07] group-hover:duration-[5s] duration-[0.5s] bg-[url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725352734/Our_Vans_for_sale_0c4e42c0c6.webp')] bg-cover bg-center transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)]"
             ></div>
             <div class="relative z-[2] flex flex-col gap-[20px]">
               <h3
-                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:bg-[currentcolor] [&amp;_span]:font-[500] [&amp;_span]:after:h-[0px] text-white"
+                class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:bg-[currentcolor] [&_span]:font-[500] [&_span]:after:h-[0px] text-white"
               >
                 Our Vans for Sale
               </h3>
@@ -673,7 +635,7 @@
                   <div class="flex items-center">
                     <div>See full inventory</div>
                     <div
-                      class="w-[0px] opacity-[0] overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-[1] transition-all duration-500"
+                      class="w-[0px] opacity-0 overflow-hidden flex justify-end group-hover:w-[21px] group-hover:opacity-100 transition-all duration-500"
                     >
                       <svg
                         width="16"
@@ -710,25 +672,13 @@
         <!-- Absolutely positioned GIF background -->
         <div class="absolute inset-0 z-[1]">
           <div
-            class="w-full h-screen max-xl:h-screen max-lg:h-[800px] max-md:h-[600px] mt-[450px] max-xl:mt-[450px] max-lg:mt-[350px] max-md:mt-[300px]"
-            style="
-              background-image: url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725380858/all_2_d495e45839.gif');
-              background-position: center;
-              background-size: cover;
-              background-repeat: no-repeat;
-            "
+            class="w-full h-screen max-xl:h-screen max-lg:h-[800px] max-md:h-[600px] mt-[450px] max-xl:mt-[450px] max-lg:mt-[350px] max-md:mt-[300px] bg-[url('https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725380858/all_2_d495e45839.gif')] bg-center bg-cover bg-no-repeat"
           ></div>
         </div>
 
         <!-- Gradient overlay -->
         <div
-          class="absolute z-[2] left-0 top-0 right-0 h-[500px] max-xl:h-[500px] max-lg:h-[400px] max-md:h-[300px] pointer-events-none"
-          style="
-            background: linear-gradient(
-              rgb(183, 190, 198) 95%,
-              rgba(83, 190, 198, 0) 100%
-            );
-          "
+          class="absolute z-[2] left-0 top-0 right-0 h-[500px] max-xl:h-[500px] max-lg:h-[400px] max-md:h-[300px] pointer-events-none bg-[linear-gradient(rgb(183,190,198)_95%,_rgba(83,190,198,0)_100%)]"
         ></div>
 
         <!-- Content -->
@@ -747,11 +697,7 @@
             <span class="relative inline-block">
               <span>Custom-built vans </span>
               <span
-                class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
-                style="
-                  transition-timing-function: cubic-bezier(0, 0.7, 0.95, 0.99);
-                  transform: scaleX(1);
-                "
+                class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)] scale-x-100"
               ></span>
             </span>
             <span>
@@ -770,13 +716,7 @@
                   class="h-[70%] aspect-square shrink-0 flex justify-center items-center rounded-full bg-grey text-[#1C1B1A]"
                 >
                   <div
-                    class="h-full aspect-square"
-                    style="
-                      background-image: url('/assets/van-black.png');
-                      background-position: center center;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                    "
+                    class="h-full aspect-square bg-[url('/assets/van-black.png')] bg-center bg-cover bg-no-repeat"
                   ></div>
                 </div>
                 <div>Build your Noovo Van</div>
@@ -810,7 +750,7 @@
               </a>
             </div>
             <button
-              class="group px-[25px] pl-[10px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm transition-all [&amp;_svg]:w-[16px] bg-white text-[#1C1B1A] hover:bg-[#1C1B1A] hover:text-white h-[60px] lg:h-[70px]"
+              class="group px-[25px] pl-[10px] flex justify-center gap-[10px] items-center rounded-full text-[14px] tracking-[-0.5px] shadow-sm transition-all [&_svg]:w-[16px] bg-white text-[#1C1B1A] hover:bg-[#1C1B1A] hover:text-white h-[60px] lg:h-[70px]"
               type="button"
             >
               <div
@@ -898,22 +838,13 @@
             class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] items-end max-w-[1200px] mx-auto"
           >
             <h2
-              class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-white text-center lg:text-left px-[27px] lg:px-[0px]"
+              class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-white text-center lg:text-left px-[27px] lg:px-0"
             >
               <span>The best camper van<br />for </span>
               <span class="relative inline-block">
                 <span>full-time living.</span>
                 <span
-                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-white origin-left transition-all delay-[0.5s] duration-[0.5s] block"
-                  style="
-                    transition-timing-function: cubic-bezier(
-                      0,
-                      0.7,
-                      0.95,
-                      0.99
-                    );
-                    transform: scaleX(1);
-                  "
+                  class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-white origin-left transition-all delay-[0.5s] duration-[0.5s] block transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)] scale-x-100"
                 ></span>
               </span>
               <span></span>
@@ -931,28 +862,24 @@
           <ul
             class="w-screen overflow-x-hidden scrollbar-hide flex gap-[20px] lg:gap-[30px] pr-[30px] lg:pr-[unset]"
           >
+            <!-- Card 1 -->
             <li
-              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-0 lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
             >
               <div class="flex flex-col">
                 <div class="h-[300px] shrink-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1728394112/Mask_group_deee49b77f.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div class="p-[25px]">
                   <div class="flex flex-col gap-[10px]">
                     <h3
-                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:h-[2px] [&_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
                     >
                       Craftsmanship
                     </h3>
@@ -967,28 +894,24 @@
                 </div>
               </div>
             </li>
+            <!-- Card 2 -->
             <li
-              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-0 lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
             >
               <div class="flex flex-col">
                 <div class="h-[300px] shrink-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626145/1d9357946cebefa5f173a53d4ee28b4b_1d620d24fd.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div class="p-[25px]">
                   <div class="flex flex-col gap-[10px]">
                     <h3
-                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:h-[2px] [&_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
                     >
                       Off-grid capacity
                     </h3>
@@ -1003,15 +926,16 @@
                 </div>
               </div>
             </li>
+            <!-- Card 3 -->
             <li
-              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-0 lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
             >
               <div class="flex flex-col">
                 <div class="h-[300px] shrink-0">
                   <video
-                    autoplay=""
-                    loop=""
-                    playsinline=""
+                    autoplay
+                    loop
+                    playsinline
                     class="object-cover w-full h-full"
                     alt="#"
                   >
@@ -1024,7 +948,7 @@
                 <div class="p-[25px]">
                   <div class="flex flex-col gap-[10px]">
                     <h3
-                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:h-[2px] [&_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
                     >
                       Full size bathroom
                     </h3>
@@ -1039,28 +963,24 @@
                 </div>
               </div>
             </li>
+            <!-- Card 4 -->
             <li
-              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-0 lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
             >
               <div class="flex flex-col">
                 <div class="h-[300px] shrink-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626191/box_large_copy_2_5cfac2d088.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div class="p-[25px]">
                   <div class="flex flex-col gap-[10px]">
                     <h3
-                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:h-[2px] [&_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
                     >
                       Smart storage
                     </h3>
@@ -1075,28 +995,24 @@
                 </div>
               </div>
             </li>
+            <!-- Card 5 -->
             <li
-              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-[0px] lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
+              class="group relative w-[calc(90vw-60px)] lg:w-[calc(50%-30px-max(120px,calc((100vw-1200px)/2)))] max-w-[400px] first:ml-[30px] lg:first:ml-[max(120px,calc((100vw-1200px)/2))] last:mr-0 lg:last:mr-[max(120px,calc((100vw-1200px)/2))] shrink-0 bg-[#1C1B1A] lg:bg-transparent lg:aspect-[4/5] overflow-hidden"
             >
               <div class="flex flex-col">
                 <div class="h-[300px] shrink-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725626205/box_large_2_a08b7b8e6f.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div class="p-[25px]">
                   <div class="flex flex-col gap-[10px]">
                     <h3
-                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
+                      class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&_span]:relative [&_span]:inline-block [&_span]:after:content-[' '] [&_span]:after:absolute [&_span]:after:bottom-[-1px] [&_span]:after:left-0 [&_span]:after:right-0 [&_span]:after:h-[2px] [&_span]:after:bg-[#1C1B1A] transition-colors duration-500 text-white"
                     >
                       Comfort
                     </h3>
@@ -1113,7 +1029,7 @@
             </li>
           </ul>
           <div
-            class="absolute z-[2] lg:top-[50%] lg:bottom-[unset] bottom-[-100px] left-0 right-0 px-[40px] lg:px-[max(120px,calc((100vw-1200px)/2))] flex justify-center lg:justify-between gap-[10px] lg:gap-[20px] pointer-events-none"
+            class="absolute z-[2] lg:top-[50%] lg:bottom-auto bottom-[-100px] left-0 right-0 px-[40px] lg:px-[max(120px,calc((100vw-1200px)/2))] flex justify-center lg:justify-between gap-[10px] lg:gap-[20px] pointer-events-none"
           >
             <button
               class="w-[66px] h-[41px] -translate-y-1/2 lg:translate-x-[-50%] bg-white rounded-full flex justify-center items-center cursor-pointer transition-all hover:scale-[1.05] pointer-events-auto"
@@ -1168,10 +1084,11 @@
           </div>
         </div>
       </section>
+
       <div
         class="w-full lg:rounded-[20px] aspect-[5/4] lg:aspect-[21/9] overflow-hidden px-7 h-[80vh] py-10"
       >
-        <div class="w-full h-full" style="transform: none">
+        <div class="w-full h-full" >
           <div class="w-full h-full object-cover">
             <img
               lazy="true"
@@ -1182,7 +1099,6 @@
               decoding="async"
               data-nimg="1"
               class="object-cover w-full h-full rounded-3xl"
-              style="color: transparent"
               src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532247/556b35ad50ec67c0350a71906b9f77ed_4c7b9e850f.webp"
             />
           </div>
@@ -1204,41 +1120,27 @@
                 <span>Loved by those who believe<br /></span
                 ><span class="relative inline-block"
                   ><span>adventure is mandatory.</span
-                  ><span
-                    class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block"
-                    style="
-                      transition-timing-function: cubic-bezier(
-                        0,
-                        0.7,
-                        0.95,
-                        0.99
-                      );
-                      transform: scaleX(1);
-                    "
-                  ></span></span
+                  ><span class="absolute bottom-[-1px] left-0 right-0 h-[2px] bg-[currentColor] origin-left transition-all delay-[0.5s] duration-[0.5s] block transition-[timing-function:cubic-bezier(0,0.7,0.95,0.99)] scale-x-100"></span>
+                  </span
                 ><span></span>
               </h2>
             </div>
           </div>
           <div class="relative">
             <ul
-              class="overflow-x-scroll scrollbar-hide mx-[90px] grid grid-cols-3 gap-[30px]"
+              class="overflow-hidden mx-[90px] grid grid-cols-3 gap-[30px] max-md:grid-cols-2 max-sm:grid-cols-1"
             >
+              <!-- Comment Card 1 -->
               <li
-                class="group relative w-full shrink-0 bg-white aspect-[4/5] rounded-[unset] overflow-hidden"
+                class="group relative w-full shrink-0 bg-white aspect-[4/5] overflow-hidden"
               >
                 <div class="absolute z-[1] inset-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full rounded-[10px]"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532414/People_Card_b483ff2021.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div
@@ -1265,6 +1167,7 @@
                             ></path>
                           </svg>
                         </li>
+                        <!-- Repeat stars as needed -->
                         <li
                           class="text-white group-hover:text-black transition-colors duration-500"
                         >
@@ -1350,24 +1253,20 @@
                   </div>
                 </div>
                 <div
-                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-[0] group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
+                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-0 group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
                 ></div>
               </li>
+              <!-- comment card 2 -->
               <li
                 class="group relative w-full shrink-0 bg-white aspect-[4/5] rounded-[unset] overflow-hidden"
               >
                 <div class="absolute z-[1] inset-0">
                   <img
-                    lazy="true"
-                    alt="#"
                     loading="lazy"
-                    width="1920"
-                    height="1440"
+                    alt="#"
                     decoding="async"
-                    data-nimg="1"
                     class="object-cover w-full h-full rounded-[10px]"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725106619/f786c65f023f1971b1f0e8f3d0bf77c5_a26dc029f8.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div
@@ -1394,6 +1293,7 @@
                             ></path>
                           </svg>
                         </li>
+                        <!-- Repeat stars as needed -->
                         <li
                           class="text-white group-hover:text-black transition-colors duration-500"
                         >
@@ -1479,7 +1379,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-[0] group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
+                  class="absolute left-0 right-0 bottom-0 bg-white z-[1] lg:h-[300px] xl:h-[245px] rounded-[20px] transition-all duration-500 translate-y-[100%] group-hover:translate-y-0 group-hover:left-[20px] group-hover:right-[20px] group-hover:bottom-[20px]"
                 ></div>
               </li>
               <li
@@ -1496,7 +1396,6 @@
                     data-nimg="1"
                     class="object-cover w-full h-full rounded-[10px]"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725532496/Frame_1073714205_d1bcab2acf.webp"
-                    style="color: transparent"
                   />
                 </div>
                 <div
@@ -1615,38 +1514,26 @@
         </div>
       </section>
 
-      <!-- blog -->
       <section class="w-full py-[50px] lg:pt-[115px] lg:pb-[130px] px-[30px]">
-        <div
-          class="max-w-[1200px] mx-auto flex flex-col gap-[70px] lg:gap-[100px]"
-        >
+        <div class="max-w-[1200px] mx-auto flex flex-col gap-[70px] lg:gap-[100px]">
+          <!-- Title and Subtitle -->
           <div class="flex flex-col items-center gap-[30px]">
-            <div class="css-zvi4ix" style="animation-delay: 200ms">
-              <h2
-                class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-noovo-black text-center"
-              >
+            <div class="css-zvi4ix delay-[200ms]">
+              <h2 class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-noovo-black text-center">
                 Van life made easy.<br />No outdoor experience necessary.
               </h2>
             </div>
-            <div class="css-zvi4ix" style="animation-delay: 250ms">
-              <p
-                class="font-general font-[400] text-[16px] lg:text-[20px] leading-[22px] lg:leading-[26px] text-center opacity-[0.6]"
-              >
-                We don’t just build exceptional vans—we craft an ownership
-                experience<br />that’s simple, seamless, and stress-free.
+            <div class="css-zvi4ix delay-[250ms]">
+              <p class="font-general font-[400] text-[16px] lg:text-[20px] leading-[22px] lg:leading-[26px] text-center opacity-[0.6]">
+                We don’t just build exceptional vans—we craft an ownership experience<br />that’s simple, seamless, and stress-free.
               </p>
             </div>
           </div>
-          <ul
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] md:gap-[30px]"
-          >
-            <li class="group relative w-full lg:aspect-square aspect-[3/2]">
-              <div
-                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]"
-              >
-                <div
-                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
-                >
+          <ul class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[50px] md:gap-[30px]">
+            <!-- Item 1 -->
+            <li class="group relative w-full aspect-[3/2] lg:aspect-square">
+              <div class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]">
+                <div class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300">
                   <img
                     lazy="true"
                     alt="#"
@@ -1656,34 +1543,27 @@
                     decoding="async"
                     data-nimg="1"
                     class="object-cover w-full h-full brightness-50"
-                    style="color: transparent"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725108293/70111fec46246e931482b60c5c81e1c6_11fa1fed22.webp"
                   />
                 </div>
-                <div
-                  class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"
-                ></div>
+                <div class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"></div>
               </div>
               <div class="absolute inset-0 z-[3]">
                 <a
                   class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
                   alt="Financing for up to<br/>20 years."
                   href="/"
-                  ><h3
-                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70"
-                  >
+                >
+                  <h3 class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70">
                     Purchase
                   </h3>
-                  <h3
-                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-white"
-                  >
+                  <h3 class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-white">
                     Financing for up to<br />20 years.
-                  </h3></a
-                >
+                  </h3>
+                </a>
               </div>
-              <div
-                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
-              >
+              <div class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+                <!-- SVG Icon for Item 1 -->
                 <svg
                   width="15"
                   height="15"
@@ -1693,20 +1573,12 @@
                 >
                   <g clip-path="url(#clip0_1472_4447)">
                     <path
-                      d="M1.66273 5.38429C1.8408 5.27156 1.92906 5.05927 1.8834 4.85352C1.79219 4.44252 1.8062 4.01515 1.92411 3.61101C2.04203 3.20688 2.26002 2.83909 2.55788 2.54175C2.85573 2.2444 3.22379 2.02712 3.62792 1.91003C4.03206 1.79294 4.4592 1.77983 4.86975 1.87191C5.07503 1.91795 5.28717 1.83057 5.40047 1.6533C5.62647 1.2997 5.93781 1.00873 6.30575 0.80718L6.06555 0.368657L6.30575 0.80718C6.6737 0.605635 7.08643 0.5 7.50589 0.5C7.92536 0.5 8.33809 0.605635 8.70603 0.80718C9.07398 1.00873 9.38531 1.2997 9.61132 1.6533C9.72468 1.83066 9.93697 1.91803 10.1423 1.87184C10.5535 1.77936 10.9814 1.79242 11.3862 1.90979C11.7909 2.02716 12.1595 2.24505 12.4575 2.5432L12.8111 2.18972L12.4575 2.5432C12.7556 2.84135 12.9734 3.21009 13.0907 3.61511C13.2081 4.02013 13.2211 4.44828 13.1287 4.85971C13.0825 5.06498 13.1699 5.27717 13.3471 5.39054C13.7005 5.61661 13.9914 5.92807 14.1929 6.29621C14.3944 6.66435 14.5 7.07732 14.5 7.49706C14.5 7.9168 14.3944 8.32977 14.1929 8.69791C13.9914 9.06605 13.7005 9.37751 13.3471 9.60358C13.1699 9.71689 13.0826 9.92893 13.1286 10.1341C13.2207 10.5449 13.2076 10.9723 13.0905 11.3767C12.9734 11.7811 12.7562 12.1493 12.459 12.4473C12.1617 12.7453 11.7941 12.9633 11.3903 13.0813C10.9864 13.1992 10.5593 13.2132 10.1485 13.122C9.9431 13.0764 9.7311 13.1642 9.61819 13.3418C9.39248 13.6968 9.0809 13.989 8.71233 14.1914C8.34376 14.3939 7.93009 14.5 7.50964 14.5C7.08919 14.5 6.67553 14.3939 6.30696 14.1914C5.93838 13.989 5.6268 13.6968 5.40109 13.3418C5.28798 13.1639 5.07544 13.0761 4.86975 13.1222C4.4592 13.2143 4.03206 13.2012 3.62793 13.0841C3.22379 12.967 2.85573 12.7497 2.55788 12.4524L2.20462 12.8062L2.55788 12.4524C2.26003 12.155 2.04203 11.7872 1.92411 11.3831C1.8062 10.979 1.79219 10.5516 1.8834 10.1406C1.92906 9.93485 1.8408 9.72256 1.66273 9.60983C1.30659 9.38435 1.01322 9.07241 0.809916 8.70302C0.606615 8.33362 0.5 7.91877 0.5 7.49706C0.5 7.07535 0.606615 6.6605 0.809916 6.2911C1.01322 5.92171 1.30659 5.60977 1.66273 5.38429Z"
-                      stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      d="M14.667 5.72222L0.500324 5.72222ZM8.59556 10.4444L14.667 5.72222ZM8.59556 1L14.667 5.72222Z"
+                      fill="currentColor"
                     ></path>
                     <path
-                      d="M10.3864 4.61523H6.0595C5.67697 4.61523 5.31012 4.76719 5.03963 5.03768C4.76914 5.30816 4.61719 5.67502 4.61719 6.05754C4.61719 6.44007 4.76914 6.80692 5.03963 7.07741C5.31012 7.34789 5.67697 7.49985 6.0595 7.49985H8.94411C9.32663 7.49985 9.69349 7.65181 9.96398 7.92229C10.2345 8.19278 10.3864 8.55963 10.3864 8.94216C10.3864 9.32468 10.2345 9.69154 9.96398 9.96202C9.69349 10.2325 9.32663 10.3845 8.94411 10.3845H4.61719"
-                      stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M7.5 11.5379V3.46094"
-                      stroke="white"
+                      d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1"
+                      stroke="currentColor"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></path>
@@ -1719,13 +1591,10 @@
                 </svg>
               </div>
             </li>
-            <li class="group relative w-full lg:aspect-square aspect-[3/2]">
-              <div
-                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px] border-[#dedede]"
-              >
-                <div
-                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
-                >
+            <!-- Item 2 -->
+            <li class="group relative w-full aspect-[3/2] lg:aspect-square">
+              <div class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px] border-[#dedede]">
+                <div class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300">
                   <img
                     lazy="true"
                     alt="#"
@@ -1735,7 +1604,6 @@
                     decoding="async"
                     data-nimg="1"
                     class="object-cover w-full h-full"
-                    style="color: transparent"
                     src="https://res.cloudinary.com/ht4hxwcbr/image/upload/v1725108310/Capture_d_ecran_2024_08_31_a_14_43_31_659b152d94.webp"
                   />
                 </div>
@@ -1745,21 +1613,17 @@
                   class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
                   alt="Mobile repair in all<br/>50 states."
                   href="/service/"
-                  ><h3
-                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-grey"
-                  >
+                >
+                  <h3 class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-grey">
                     Service
                   </h3>
-                  <h3
-                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-noovo-black"
-                  >
+                  <h3 class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-[currentcolor] text-center text-noovo-black">
                     Mobile repair in all<br />50 states.
-                  </h3></a
-                >
+                  </h3>
+                </a>
               </div>
-              <div
-                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
-              >
+              <div class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+                <!-- SVG Icon for Item 2 -->
                 <svg
                   width="15"
                   height="15"
@@ -1768,99 +1632,69 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M0 2V7.76923H15V6.61539H8.07692V5.46154H15V4.30769H8.07692V3.15385H15V2H0ZM1.15385 2.57692C1.30686 2.57692 1.4536 2.63771 1.56179 2.7459C1.66999 2.85409 1.73077 3.00084 1.73077 3.15385C1.73077 3.30686 1.66999 3.4536 1.56179 3.56179C1.4536 3.66999 1.30686 3.73077 1.15385 3.73077C1.00084 3.73077 0.854094 3.66999 0.7459 3.56179C0.637706 3.4536 0.576923 3.30686 0.576923 3.15385C0.576923 3.00084 0.637706 2.85409 0.7459 2.7459C0.854094 2.63771 1.00084 2.57692 1.15385 2.57692ZM3.46154 2.57692C3.61455 2.57692 3.76129 2.63771 3.86948 2.7459C3.97768 2.85409 4.03846 3.00084 4.03846 3.15385C4.03846 3.30686 3.97768 3.4536 3.86948 3.56179C3.76129 3.66999 3.61455 3.73077 3.46154 3.73077C3.30853 3.73077 3.16179 3.66999 3.05359 3.56179C2.9454 3.4536 2.88462 3.30686 2.88462 3.15385C2.88462 3.00084 2.9454 2.85409 3.05359 2.7459C3.16179 2.63771 3.30853 2.57692 3.46154 2.57692ZM5.76923 2.57692C5.92224 2.57692 6.06898 2.63771 6.17718 2.7459C6.28537 2.85409 6.34615 3.00084 6.34615 3.15385C6.34615 3.30686 6.28537 3.4536 6.17718 3.56179C6.06898 3.66999 5.92224 3.73077 5.76923 3.73077C5.61622 3.73077 5.46948 3.66999 5.36128 3.56179C5.25309 3.4536 5.19231 3.30686 5.19231 3.15385C5.19231 3.00084 5.25309 2.85409 5.36128 2.7459C5.46948 2.63771 5.61622 2.57692 5.76923 2.57692ZM2.30769 4.30769C2.4607 4.30769 2.60744 4.36848 2.71564 4.47667C2.82383 4.58486 2.88462 4.73161 2.88462 4.88462C2.88462 5.03763 2.82383 5.18437 2.71564 5.29256C2.60744 5.40076 2.4607 5.46154 2.30769 5.46154C2.15468 5.46154 2.00794 5.40076 1.89975 5.29256C1.79155 5.18437 1.73077 5.03763 1.73077 4.88462C1.73077 4.73161 1.79155 4.58486 1.89975 4.47667C2.00794 4.36848 2.15468 4.30769 2.30769 4.30769ZM4.61538 4.30769C4.76839 4.30769 4.91514 4.36848 5.02333 4.47667C5.13152 4.58486 5.19231 4.73161 5.19231 4.88462C5.19231 5.03763 5.13152 5.18437 5.02333 5.29256C4.91514 5.40076 4.76839 5.46154 4.61538 5.46154C4.46238 5.46154 4.31563 5.40076 4.20744 5.29256C4.09924 5.18437 4.03846 5.03763 4.03846 4.88462C4.03846 4.73161 4.09924 4.58486 4.20744 4.47667C4.31563 4.36848 4.46238 4.30769 4.61538 4.30769ZM6.92308 4.30769C7.07609 4.30769 7.22283 4.36848 7.33102 4.47667C7.43922 4.58486 7.5 4.73161 7.5 4.88462C7.5 5.03763 7.43922 5.18437 7.33102 5.29256C7.22283 5.40076 7.07609 5.46154 6.92308 5.46154C6.77007 5.46154 6.62332 5.40076 6.51513 5.29256C6.40694 5.18437 6.34615 5.03763 6.34615 4.88462C6.34615 4.73161 6.40694 4.58486 6.51513 4.47667C6.62332 4.36848 6.77007 4.30769 6.92308 4.30769ZM1.15385 6.03846C1.30686 6.03846 1.4536 6.09925 1.56179 6.20744C1.66999 6.31563 1.73077 6.46238 1.73077 6.61539C1.73077 6.76839 1.66999 6.91514 1.56179 7.02333C1.4536 7.13153 1.30686 7.19231 1.15385 7.19231C1.00084 7.19231 0.854094 7.13153 0.7459 7.02333C0.637706 6.91514 0.576923 6.76839 0.576923 6.61539C0.576923 6.46238 0.637706 6.31563 0.7459 6.20744C0.854094 6.09925 1.00084 6.03846 1.15385 6.03846ZM3.46154 6.03846C3.61455 6.03846 3.76129 6.09925 3.86948 6.20744C3.97768 6.31563 4.03846 6.46238 4.03846 6.61539C4.03846 6.76839 3.97768 6.91514 3.86948 7.02333C3.76129 7.13153 3.61455 7.19231 3.46154 7.19231C3.30853 7.19231 3.16179 7.13153 3.05359 7.02333C2.9454 6.91514 2.88462 6.76839 2.88462 6.61539C2.88462 6.46238 2.9454 6.31563 3.05359 6.20744C3.16179 6.09925 3.30853 6.03846 3.46154 6.03846ZM5.76923 6.03846C5.92224 6.03846 6.06898 6.09925 6.17718 6.20744C6.28537 6.31563 6.34615 6.46238 6.34615 6.61539C6.34615 6.76839 6.28537 6.91514 6.17718 7.02333C6.06898 7.13153 5.92224 7.19231 5.76923 7.19231C5.61622 7.19231 5.46948 7.13153 5.36128 7.02333C5.25309 6.91514 5.19231 6.76839 5.19231 6.61539C5.19231 6.46238 5.25309 6.31563 5.36128 6.20744C5.46948 6.09925 5.61622 6.03846 5.76923 6.03846ZM0 8.92308V10.0769H15V8.92308H0ZM0 11.2308V12.3846H15V11.2308H0Z"
-                    fill="white"
-                  ></path>
-                </svg>
+                    d="M0 2V7.76923H15V6.61539H8.07692V5.46154H15V4.30769H8.07692V3.15385H15V2H0ZM1.15385 2.57692C1.30686 2.57692 1.4536 2.63771 1.56179 2.7459C1.66999 2.85409 1.73077 3.00084 1.73077 3.15385C1.73077 3.30686 1.66999 3.4536 1.56179 3.56179C1.4536 3.66999 1.30686 3.73077 1.15385 3.73077C1.00084 3.73077 0.854094 3.66999 0.7459 3.56179C0.637706 3.4536 0.576923 3.30686 0.576923 3.15385C0.576923 3.00084 0.637706 2.85409 0.7459 2.7459C0.854094 2.63771 1.00084 2.57692 1.15385 2.57692ZM3.46154 2.57692C3.61455 2.57692 3.76129 2.63771 3.86948 2.7459C3.97768 2.85409 4.03846 3.00084 4.03846 3.15385C4.03846 3.30686 3.97768 3.4536 3.86948 3.56179C3.76129 3.66999 3.61455 3.73077 3.46154 3.73077C3.30853 3.73077 3.16179 3.66999 3.05359 3.56179C2.9454 3.4536 2.88462 3.30686 2.88462 3.15385C2.88462 3.00084 2.9454 2.85409 3.05359 2.7459C3.16179 2.63771 3.30853 2.57692 3.46154 2.57692ZM5.76923 2.57692C5.92224 2.57692 6.06898 2.63771 6.17718 2.7459C6.28537 2.85409 6.34615 3.00084 6.34615 3.15385C6.34615 3.30686 6.28537 3.4536 6.17718 3.56179C6.06898 3.66999 5.92224 3.73077 5.76923 3.73077C5.61622 3.73077 5.46948 3.66999 5.36128 3.56179C5.25309 3.4536 5.19231 3.30686 5.19231 3.15385C5.19231 3.00084 5.25309 2.85409 5.36128 2.7459C5.46948 2.63771 5.61622 2.57692 5.76923 2.57692ZM2.30769 4.30769C2.4607 4.30769 2.60744 4.36848 2.71564 4.47667C2.82383 4.58486 2.88462 4.73161 2.88462 4.88462C2.88462 5.03763 2.82383 5.18437 2.71564 5.29256C2.60744 5.40076 2.4607 5.46154 2.30769 5.46154C2.15468 5.46154 2.00794 5.40076 1.89975 5.29256C1.79155 5.18437 1.73077 5.03763 1.73077 4.88462C1.73077 4.73161 1.79155 4.58486 1.89975 4.47667C1.99794 4.36848 2.14468 4.30769 2.30769 4.30769ZM4.61538 4.30769C4.76839 4.30769 4.91514 4.36848 5.02333 4.47667C5.13152 4.58486 5.19231 4.73161 5.19231 4.88462C5.19231 5.03763 5.13152 5.18437 5.02333 5.29256C4.91514 5.40076 4.76839 5.46154 4.61538 5.46154C4.46238 5.46154 4.31563 5.40076 4.20744 5.29256C4.09924 5.18437 4.03846 5.03763 4.03846 4.88462C4.03846 4.73161 4.09924 4.58486 4.20744 4.47667C4.31563 4.36848 4.46238 4.30769 4.61538 4.30769ZM6.92308 4.30769C6.07692 4.30769 6.92308 4.30769 6.92308 4.30769ZM6.92308 4.30769C7.07609 4.30769 7.22283 4.36848 7.33102 4.47667C7.43922 4.58486 7.5 4.73161 7.5 4.88462C7.5 5.03763 7.43922 5.18437 7.33102 5.29256C7.22283 5.40076 7.07609 5.46154 6.92308 5.46154C6.77007 5.46154 6.62332 5.40076 6.51513 5.29256C6.40694 5.18437 6.34615 5.03763 6.34615 4.88462C6.34615 4.73161 6.40694 4.58486 6.51513 4.47667C6.62332 4.36848 6.77007 4.30769 6.92308 4.30769ZM0 8.92308V10.0769H15V8.92308H0ZM0 11.2308V12.3846H15V11.2308H0Z"
+                            fill="white"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1472_4544">
+                            <rect width="15" height="15" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </li>
+                  <!-- Item 3 -->
+                  <li class="group relative w-full aspect-[3/2] lg:aspect-square">
+                    <div class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]">
+                      <div class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300">
+                        <video autoplay loop muted playsinline class="object-cover w-full h-full brightness-50" alt="#">
+                          <source src="https://res.cloudinary.com/ht4hxwcbr/video/upload/v1725108341/e7a5_4793_8686_288930204947_754438969e.webm" type="video/webm" />
+                        </video>
+                      </div>
+                      <div class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"></div>
+                    </div>
+                    <div class="absolute inset-0 z-[3]">
+                      <a class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]" alt="Enjoyment comes with a <span>3-year warranty.</span>" href="/service/">
+                        <h3 class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70">
+                          Warranty
+                        </h3>
+                        <h3 class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-white text-center text-white">
+                          Enjoyment comes with a <span>3-year warranty.</span>
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+                      <!-- SVG Icon for Item 3 -->
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1472_4544)">
+                          <path
+                            d="M1.66273 5.38429C1.8408 5.27156 1.92906 5.05927 1.8834 4.85352C1.79219 4.44252 1.8062 4.01515 1.92411 3.61101C2.04203 3.20688 2.26002 2.83909 2.55788 2.54175C2.85573 2.2444 3.22379 2.02712 3.62792 1.91003C4.03206 1.79294 4.4592 1.77983 4.86975 1.87191C5.07503 1.91795 5.28717 1.83057 5.40047 1.6533C5.62647 1.2997 5.93781 1.00873 6.30575 0.80718L6.06555 0.368657L6.30575 0.80718C6.6737 0.605635 7.08643 0.5 7.50589 0.5C7.92536 0.5 8.33809 0.605635 8.70603 0.80718C9.07398 1.00873 9.38531 1.2997 9.61132 1.6533C9.72468 1.83066 9.93697 1.91803 10.1423 1.87184C10.5535 1.77936 10.9814 1.79242 11.3862 1.90979C11.7909 2.02716 12.1595 2.24505 12.4575 2.5432L12.8111 2.18972L12.4575 2.5432C12.7556 2.84135 12.9734 3.21009 13.0907 3.61511C13.2081 4.02013 13.2211 4.44828 13.1287 4.85971C13.0825 5.06498 13.1699 5.27717 13.3471 5.39054C13.7005 5.61661 13.9914 5.92807 14.1929 6.29621C14.3944 6.66435 14.5 7.07732 14.5 7.49706C14.5 7.9168 14.3944 8.32977 14.1929 8.69791C13.9914 9.06605 13.7005 9.37751 13.3471 9.60358C13.1699 9.71689 13.0826 9.92893 13.1286 10.1341C13.2207 10.5449 13.2076 10.9723 13.0905 11.3767C12.9734 11.7811 12.7562 12.1493 12.459 12.4473C12.1617 12.7453 11.7941 12.9633 11.3903 13.0813C10.9864 13.1992 10.5593 13.2132 10.1485 13.122C9.9431 13.0764 9.7311 13.1642 9.61819 13.3418C9.39248 13.6968 9.0809 13.989 8.71233 14.1914C8.34376 14.3939 7.93009 14.5 7.50964 14.5C7.08919 14.5 6.67553 14.3939 6.30696 14.1914C5.93838 13.989 5.6268 13.6968 5.40109 13.3418C5.28798 13.1639 5.07544 13.0761 4.86975 13.1222C4.4592 13.2143 4.03206 13.2012 3.62793 13.0841C3.22379 12.967 2.85573 12.7497 2.55788 12.4524L2.20462 12.8062L2.55788 12.4524C2.26003 12.155 2.04203 11.7872 1.92411 11.3831C1.8062 10.979 1.79219 10.5516 1.8834 10.1406C1.92906 9.93485 1.8408 9.72256 1.66273 9.60983Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6 7.5L7.33333 9L10 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1472_4544">
+                            <rect width="15" height="15" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li
-              class="group relative w-full lg:aspect-square md:col-span-2 lg:col-span-1 aspect-[3/2]"
-            >
-              <div
-                class="absolute inset-0 overflow-hidden rounded-[20px] border-[1px]"
-              >
-                <div
-                  class="absolute inset-0 z-[1] group-hover:scale-[1.05] transition-transform duration-300"
-                >
-                  <video
-                    autoplay=""
-                    loop=""
-                    muted=""
-                    playsinline=""
-                    class="object-cover w-full h-full brightness-50"
-                    alt="#"
-                  >
-                    <source
-                      src="https://res.cloudinary.com/ht4hxwcbr/video/upload/v1725108341/e7a5_4793_8686_288930204947_754438969e.webm"
-                      type="video/webm"
-                    />
-                  </video>
-                </div>
-                <div
-                  class="absolute inset-0 z-[2] bg-noovo-black bg-opacity-40"
-                ></div>
-              </div>
-              <div class="absolute inset-0 z-[3]">
-                <a
-                  class="relative h-full w-full flex flex-col items-center justify-center gap-[20px] p-[30px]"
-                  alt="Enjoyment comes with a <span>3-year warranty.</span>"
-                  href="/service/"
-                  ><h3
-                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-center text-noovo-white opacity-70"
-                  >
-                    Warranty
-                  </h3>
-                  <h3
-                    class="font-general font-[400] text-[25px] lg:text-[30px] leading-[25px] lg:leading-[30px] lg:tracking-[-1px] [&amp;_span]:relative [&amp;_span]:inline-block [&amp;_span]:after:content-[' '] [&amp;_span]:after:absolute [&amp;_span]:after:bottom-[-1px] [&amp;_span]:after:left-0 [&amp;_span]:after:right-0 [&amp;_span]:after:h-[2px] [&amp;_span]:after:bg-white text-center text-white"
-                  >
-                    Enjoyment comes with a <span>3-year warranty.</span>
-                  </h3></a
-                >
-              </div>
-              <div
-                class="absolute top-0 left-1/2 z-[3] w-[50px] h-[50px] bg-[#1C1B1A] rounded-full -translate-y-1/2 -translate-x-1/2 flex justify-center items-center"
-              >
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_1472_4544)">
-                    <path
-                      d="M1.66273 5.38429C1.8408 5.27156 1.92906 5.05927 1.8834 4.85352C1.79219 4.44252 1.8062 4.01515 1.92411 3.61101C2.04203 3.20688 2.26002 2.83909 2.55788 2.54175C2.85573 2.2444 3.22379 2.02712 3.62792 1.91003C4.03206 1.79294 4.4592 1.77983 4.86975 1.87191C5.07503 1.91795 5.28717 1.83057 5.40047 1.6533C5.62647 1.2997 5.93781 1.00873 6.30575 0.80718L6.06555 0.368657L6.30575 0.80718C6.6737 0.605635 7.08643 0.5 7.50589 0.5C7.92536 0.5 8.33809 0.605635 8.70603 0.80718C9.07398 1.00873 9.38531 1.2997 9.61132 1.6533C9.72468 1.83066 9.93697 1.91803 10.1423 1.87184C10.5535 1.77936 10.9814 1.79242 11.3862 1.90979C11.7909 2.02716 12.1595 2.24505 12.4575 2.5432L12.8111 2.18972L12.4575 2.5432C12.7556 2.84135 12.9734 3.21009 13.0907 3.61511C13.2081 4.02013 13.2211 4.44828 13.1287 4.85971C13.0825 5.06498 13.1699 5.27717 13.3471 5.39054C13.7005 5.61661 13.9914 5.92807 14.1929 6.29621C14.3944 6.66435 14.5 7.07732 14.5 7.49706C14.5 7.9168 14.3944 8.32977 14.1929 8.69791C13.9914 9.06605 13.7005 9.37751 13.3471 9.60358C13.1699 9.71689 13.0826 9.92893 13.1286 10.1341C13.2207 10.5449 13.2076 10.9723 13.0905 11.3767C12.9734 11.7811 12.7562 12.1493 12.459 12.4473C12.1617 12.7453 11.7941 12.9633 11.3903 13.0813C10.9864 13.1992 10.5593 13.2132 10.1485 13.122C9.9431 13.0764 9.7311 13.1642 9.61819 13.3418C9.39248 13.6968 9.0809 13.989 8.71233 14.1914C8.34376 14.3939 7.93009 14.5 7.50964 14.5C7.08919 14.5 6.67553 14.3939 6.30696 14.1914C5.93838 13.989 5.6268 13.6968 5.40109 13.3418C5.28798 13.1639 5.07544 13.0761 4.86975 13.1222C4.4592 13.2143 4.03206 13.2012 3.62793 13.0841C3.22379 12.967 2.85573 12.7497 2.55788 12.4524L2.20462 12.8062L2.55788 12.4524C2.26003 12.155 2.04203 11.7872 1.92411 11.3831C1.8062 10.979 1.79219 10.5516 1.8834 10.1406C1.92906 9.93485 1.8408 9.72256 1.66273 9.60983C1.30659 9.38435 1.01322 9.07241 0.809916 8.70302C0.606615 8.33362 0.5 7.91877 0.5 7.49706C0.5 7.07535 0.606615 6.6605 0.809916 6.2911C1.01322 5.92171 1.30659 5.60977 1.66273 5.38429Z"
-                      stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M6 7.5L7.33333 9L10 6"
-                      stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1472_4544">
-                      <rect width="15" height="15" fill="white"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </div>
+          </section>
+      
       <!-- experience Noovo -->
       <section
-        class="relative h-[80vh]"
-        style="
-          background-image: url(/assets/bottom_f4421a1869.webp);
-          background-position: center;
-          background-size: cover;
-        "
+        class="relative h-[80vh] bg-[url(https://res.cloudinary.com/ht4hxwcbr/image/upload/v1730397965/bottom_f4421a1869.webp)] bg-center bg-cover bg-no-repeat"
+       
       >
         <div
           class="inset-0 flex flex-col justify-center items-center gap-[20px] h-full"
@@ -1877,13 +1711,8 @@
               class="h-[70%] aspect-square shrink-0 flex justify-center items-center rounded-full bg-gray-500 text-[#1C1B1A]"
             >
               <div
-                class="h-full aspect-square"
-                style="
-                  background-image: url(/assets/van-black.png);
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                "
+                class="h-full aspect-square bg-[url(/assets/van-black.png)] bg-center bg-cover bg-no-repeat"
+               
               ></div>
             </div>
             <div>Try a Noovo Van</div>
@@ -1942,10 +1771,8 @@
           class="py-[50px] lg:py-[100px] px-[37px] lg:px-[0px] bg-[#f5f5f5] flex flex-col gap-[50px] rounded-[20px]"
         >
           <div class="flex flex-col items-center gap-[30px]">
-            <div class="css-zvi4ix" style="animation-delay: 200ms">
-              <h2
-                class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-[#1C1B1A] text-center"
-              >
+            <div class="css-zvi4ix delay-[200ms]">
+              <h2 class="font-general font-[400] text-[30px] lg:text-[60px] leading-[30px] lg:leading-[60px] tracking-[-1.2px] lg:tracking-[-2.5px] text-[#1C1B1A] text-center">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -2132,13 +1959,11 @@
     </main>
     <!-- footer -->
     <footer class="relative bg-white overflow-hidden">
-      <div
-        class="absolute z-[2] top-0 left-0 right-0 h-[100px]"
-        style="background: linear-gradient(to top, transparent 0%, #fff 100%)"
-      ></div>
+      <div class="absolute z-[2] top-0 left-0 right-0 h-[100px] bg-gradient-to-t from-transparent to-white"></div>
+
       <div
         class="relative z-[1] px-[30px] py-[40px] lg:pt-[100px] flex flex-col gap-[30px]"
-        style="opacity: 1; transform: none"
+        
       >
         <div class="w-full max-w-[1200px] mx-auto lg:grid lg:grid-cols-2">
           <div class="lg:max-w-[325px] flex flex-col gap-[40px] lg:gap-[20px]">
@@ -2156,13 +1981,13 @@
                   name="firstname"
                   value=""
                 /><label
-                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
-                  style="font-size: 14px; top: 26px; left: 4px"
-                  >Your First Name*</label
-                >
+                class="absolute top-[26px] left-[4px] px-4 text-noovo-black opacity-60 transition-all pointer-events-none tracking-[-0.7px] text-[14px] translate-y-[calc(-50%-2px)]"
+              >
+                Your First Name*
+              </label>
+              
                 <div
-                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
-                  style="opacity: 0"
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none opacity-0"
                 ></div>
               </div>
               <div class="relative">
@@ -2173,13 +1998,13 @@
                   name="email"
                   value=""
                 /><label
-                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
-                  style="font-size: 14px; top: 26px; left: 4px"
-                  >Your Email*</label
-                >
+                class="absolute top-[26px] left-[4px] px-4 text-black opacity-60 transition-all pointer-events-none tracking-[-0.7px] text-[14px] translate-y-[calc(-50%-2px)]"
+              >
+                Email*
+              </label>
+              
                 <div
-                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
-                  style="opacity: 0"
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none opacity-0"
                 ></div>
               </div>
               <div
@@ -2192,13 +2017,13 @@
                   name="username"
                   value=""
                 /><label
-                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
-                  style="font-size: 14px; top: 26px; left: 4px"
-                  >Username*</label
-                >
+                class="absolute top-[26px] left-[4px] px-4 text-noovo-black opacity-60 transition-all pointer-events-none tracking-[-0.7px] text-[14px] translate-y-[calc(-50%-2px)]"
+              >
+                Username*
+              </label>
+              
                 <div
-                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
-                  style="opacity: 0"
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none opacity-0"
                 ></div>
               </div>
               <div class="relative">
@@ -2209,13 +2034,12 @@
                   name="zip_code"
                   value=""
                 /><label
-                  class="absolute translate-y-[calc(-50%-2px)] left-0 px-4 text-noovo-black opacity-60 tracking-wide pointer-events-none transition-all tracking-[-0.7px] text-[14px]"
-                  style="font-size: 14px; top: 26px; left: 4px"
-                  >Zip Code*</label
-                >
+                class="absolute top-[26px] left-[4px] px-4 text-noovo-black opacity-60 transition-all pointer-events-none tracking-[-0.7px] text-[14px] translate-y-[calc(-50%-2px)]"
+              >
+                Zip Code*
+              </label>
                 <div
-                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none"
-                  style="opacity: 0"
+                  class="absolute inset-0 rounded-[15px] border-2 transition-all pointer-events-none opacity-0"
                 ></div>
               </div>
               <div class="relative">
@@ -2404,7 +2228,7 @@
                       </defs>
                     </svg>
                     <p
-                      class="font-general text-noovo-grey font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
+                      class="font-general text-gray-500 font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px]"
                     >
                       Over 2700 miles traveled from Las Vegas
                     </p>
@@ -2426,7 +2250,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/camper-vans-for-sale/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2437,7 +2261,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/camper-vans-for-rent/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2448,7 +2272,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/rv-dealers/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2457,6 +2281,7 @@
                     >
                   </li>
                 </ul>
+
               </div>
               <div class="flex flex-col gap-[10px]">
                 <p
@@ -2468,7 +2293,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/noovo-lite/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2479,7 +2304,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/noovo-pop/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2490,7 +2315,7 @@
                   <li class="my-[1px] lg:my-0">
                     <a
                       class="group hover:opacity-50 transition-all"
-                      href="/noovo-plus/"
+                      href="/"
                       ><p
                         class="font-general lg:text-[14px] lg:leading-[18px] text-noovo-black font-[500] group-hover:translate-x-[2px] transition-all text-[14px]"
                       >
@@ -2499,6 +2324,7 @@
                     >
                   </li>
                 </ul>
+
               </div>
               <div class="flex flex-col gap-[10px]">
                 <p
@@ -2620,6 +2446,7 @@
             </nav>
           </div>
         </div>
+        <!-- noovo -->
         <div
           class="w-full max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-end"
         >
@@ -2687,7 +2514,7 @@
                 </div>
                 <a target="_blank" href="tel:+17252156360"
                   ><p
-                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                    class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-black"
                   >
                     +1(725)215-6360
                   </p></a
@@ -2721,7 +2548,7 @@
                   </div>
                 </div>
                 <p
-                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black"
                 >
                   contact@noovolife.com
                 </p>
@@ -2760,7 +2587,7 @@
                   </div>
                 </div>
                 <p
-                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black whitespace-pre-wrap"
+                  class="font-general font-[400] text-[14px] lg:text-[14px] leading-[18px] lg:leading-[18px] text-noovo-black"
                 >
                   4495 Copper Sage St<br />Las Vegas, NV 89115
                 </p>
@@ -2776,6 +2603,7 @@
               renderings on this site for any purpose.
             </p>
           </div>
+
           <div
             class="flex flex-col lg:flex-row justify-between items-center lg:items-end pt-[40px] lg:pt-0 pb-[20px] lg:pb-0 border-t border-[rgba(0,0,0,0.1)] lg:border-0"
           >
